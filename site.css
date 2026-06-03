@@ -295,3 +295,18 @@ image-slot{border-radius:var(--r);overflow:hidden;display:block}
 image-slot:not([src]){display:none}
 .img-2:not(:has(image-slot[src])){display:none}
 .img-wide:not(:has(image-slot[src])){display:none}
+
+/* Home hero banner photo with brand overlay (darker left for legibility). */
+.hero--photo{
+  background:linear-gradient(90deg, rgba(42,21,8,.94) 0%, rgba(42,21,8,.80) 45%, rgba(42,21,8,.50) 100%), url('assets/photos/home-banner.jpg');
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+@media (max-width:760px){
+  .hero--photo{
+    background:linear-gradient(rgba(42,21,8,.84), rgba(42,21,8,.88)), url('assets/photos/home-banner.jpg');
+    background-size:cover;
+    background-position:center;
+  }
+}
