@@ -159,7 +159,7 @@ function buildCTA() {
       </div>
       <div class="cta-actions">
         <a href="${JF.phoneHref}" class="cta-phone">
-          <span class="cta-phone-lbl">Call Anytime</span>
+          <span class="cta-phone-lbl">Call</span>
           <span class="cta-phone-num">${JF.phone}</span>
         </a>
         <a href="contact.html" class="btn btn-primary">Get a Free Quote</a>
