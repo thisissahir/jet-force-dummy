@@ -130,7 +130,8 @@ h4{font-family:var(--fb);font-size:1.0625rem;font-weight:600;color:var(--nt-900)
 
 /* ── Service Cards ───────────────────────────────────────── */
 .svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.svc-card{display:block;background:var(--white);border:1px solid var(--nt-200);border-top:3px solid transparent;border-radius:var(--r);padding:26px 22px;box-shadow:var(--sh1);transition:all 180ms ease}
+.svc-card{display:block;background:var(--white);border:1px solid var(--nt-200);border-top:3px solid transparent;border-radius:var(--r);padding:26px 22px;box-shadow:var(--sh1);transition:all 180ms ease;overflow:hidden}
+.svc-img{display:block;width:calc(100% + 44px);height:150px;object-fit:cover;margin:-26px -22px 18px;background:var(--nt-100)}
 .svc-card:hover{border-top-color:var(--ye-500);box-shadow:var(--sh2);transform:translateY(-3px)}
 .svc-card:hover .svc-ico{background:var(--ye-500);color:var(--br-950)}
 .svc-ico{width:44px;height:44px;border-radius:var(--r);background:var(--ye-50);display:flex;align-items:center;justify-content:center;margin-bottom:16px;color:var(--ye-700);transition:background 180ms,color 180ms}
