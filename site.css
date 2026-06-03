@@ -129,15 +129,15 @@ h4{font-family:var(--fb);font-size:1.0625rem;font-weight:600;color:var(--nt-900)
 .trust-lbl{font-size:.75rem;font-weight:500;color:var(--nt-500);margin-top:3px;letter-spacing:.02em}
 
 /* ── Service Cards ───────────────────────────────────────── */
-.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.svc-card{display:block;background:var(--white);border:1px solid var(--nt-200);border-top:3px solid transparent;border-radius:var(--r);padding:26px 22px;box-shadow:var(--sh1);transition:all 180ms ease;overflow:hidden}
-.svc-img{display:block;width:calc(100% + 44px);height:150px;object-fit:cover;margin:-26px -22px 18px;background:var(--nt-100)}
+.svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+.svc-card{display:block;background:var(--white);border:1px solid var(--nt-200);border-top:3px solid transparent;border-radius:var(--r);padding:34px 32px;box-shadow:var(--sh1);transition:all 180ms ease;overflow:hidden}
+.svc-img{display:block;width:calc(100% + 64px);height:320px;object-fit:cover;margin:-34px -32px 26px;background:var(--nt-100)}
 .svc-card:hover{border-top-color:var(--ye-500);box-shadow:var(--sh2);transform:translateY(-3px)}
 .svc-card:hover .svc-ico{background:var(--ye-500);color:var(--br-950)}
 .svc-ico{width:44px;height:44px;border-radius:var(--r);background:var(--ye-50);display:flex;align-items:center;justify-content:center;margin-bottom:16px;color:var(--ye-700);transition:background 180ms,color 180ms}
-.svc-name{font-family:var(--fd);font-size:1.0625rem;font-weight:700;color:var(--br-800);margin-bottom:8px;line-height:1.2}
-.svc-desc{font-size:.875rem;color:var(--nt-500);line-height:1.6;margin-bottom:14px}
-.svc-more{font-size:.75rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--br-700);display:flex;align-items:center;gap:4px;transition:color 150ms}
+.svc-name{font-family:var(--fd);font-size:1.625rem;font-weight:700;color:var(--br-800);margin-bottom:12px;line-height:1.15}
+.svc-desc{font-size:1.0625rem;color:var(--nt-500);line-height:1.65;margin-bottom:20px}
+.svc-more{font-size:.8125rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--br-700);display:flex;align-items:center;gap:5px;transition:color 150ms}
 .svc-card:hover .svc-more{color:var(--ye-700)}
 
 /* ── USP Split ───────────────────────────────────────────── */
