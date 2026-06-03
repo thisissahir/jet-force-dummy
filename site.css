@@ -279,6 +279,28 @@ image-slot{border-radius:var(--r);overflow:hidden;display:block}
   .cta-phone{align-items:center}
   .usp-list{grid-template-columns:1fr}
   .section{padding:56px 0}
+  /* Prevent any element from forcing horizontal scroll on phones */
+  html,body{overflow-x:hidden}
+  .eyebrow{font-size:.625rem;letter-spacing:.1em}
+  /* Hero: tighter spacing, full-width stacked badges */
+  .hero{min-height:auto}
+  .hero-content{padding:48px 0}
+  .hero h1{font-size:clamp(2.25rem,9vw,3rem)}
+  .hero-sub{font-size:1.0625rem}
+  .hero-btns{gap:12px}
+  .hero-trust{gap:10px;width:100%}
+  .hero-trust-item{width:100%;font-size:1rem;padding:12px 18px}
+  /* Service cards: single column, shorter images, tighter padding */
+  .svc-grid{grid-template-columns:1fr;gap:20px}
+  .svc-card{padding:20px 20px}
+  .svc-img{width:calc(100% + 40px);height:200px;margin:-20px -20px 18px}
+  .svc-name{font-size:1.375rem}
+  .svc-desc{font-size:1rem}
+  /* Reduce oversized section padding on small screens */
+  .usp-l,.usp-r{padding:44px 24px}
+  .cta-banner{padding:52px 0}
+  .page-hero-inner{padding:44px 0 40px}
+  .ci-card,.ct-card{padding:24px}
 }
 @media(max-width:480px){
   .svc-grid{grid-template-columns:1fr}
