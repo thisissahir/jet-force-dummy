@@ -115,9 +115,9 @@ h4{font-family:var(--fb);font-size:1.0625rem;font-weight:600;color:var(--nt-900)
 .hero h1 em{font-style:normal;color:var(--ye-500)}
 .hero-sub{font-size:1.125rem;color:rgba(255,255,255,.65);max-width:520px;margin-bottom:40px;line-height:1.65}
 .hero-btns{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-bottom:48px}
-.hero-trust{display:flex;gap:22px;flex-wrap:wrap;align-items:center}
-.hero-trust-item{display:flex;align-items:center;gap:7px;font-size:.8125rem;font-weight:500;color:rgba(255,255,255,.5)}
-.hero-trust-item svg{flex-shrink:0;color:var(--ye-500)}
+.hero-trust{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.hero-trust-item{display:inline-flex;align-items:center;gap:10px;font-size:1.0625rem;font-weight:600;color:#fff;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:13px 24px;backdrop-filter:blur(4px)}
+.hero-trust-item svg{flex-shrink:0;width:20px;height:20px;color:var(--ye-500)}
 
 /* ── Trust Bar ───────────────────────────────────────────── */
 .trust-bar{background:var(--white);border-bottom:1px solid var(--nt-200)}
