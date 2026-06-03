@@ -288,3 +288,9 @@ image-slot{border-radius:var(--r);overflow:hidden;display:block}
   .hero-btns{flex-direction:column;align-items:flex-start}
   .foot-grid{grid-template-columns:1fr;gap:24px}
 }
+
+/* Production image slots: hide empty editing placeholders so only real
+   images (those given a src) show on the live site. */
+image-slot:not([src]){display:none}
+.img-2:not(:has(image-slot[src])){display:none}
+.img-wide:not(:has(image-slot[src])){display:none}
