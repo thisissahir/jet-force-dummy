@@ -290,12 +290,18 @@ image-slot{border-radius:var(--r);overflow:hidden;display:block}
   .hero-btns{gap:12px}
   .hero-trust{gap:10px;width:100%}
   .hero-trust-item{width:100%;font-size:1rem;padding:12px 18px}
-  /* Service cards: single column, shorter images, tighter padding */
-  .svc-grid{grid-template-columns:1fr;gap:20px}
-  .svc-card{padding:20px 20px}
-  .svc-img{width:calc(100% + 40px);height:200px;margin:-20px -20px 18px}
-  .svc-name{font-size:1.375rem}
-  .svc-desc{font-size:1rem}
+  /* Service cards become tap-to-expand tabs on phones */
+  .svc-grid{grid-template-columns:1fr;gap:12px}
+  .svc-card{padding:0;display:flex;flex-direction:column}
+  .svc-name{order:-1;margin:0;padding:18px 20px;font-size:1.25rem;display:flex;align-items:center;justify-content:space-between;gap:12px;cursor:pointer}
+  .svc-name::after{content:'';flex-shrink:0;width:9px;height:9px;border-right:2.5px solid var(--br-700);border-bottom:2.5px solid var(--br-700);transform:rotate(45deg);transition:transform .2s}
+  .svc-card.open .svc-name::after{transform:rotate(225deg)}
+  .svc-img{display:none;width:100%;height:200px;margin:0}
+  .svc-desc{display:none;font-size:1rem;margin:0;padding:14px 20px 0}
+  .svc-more{display:none;padding:16px 20px 20px}
+  .svc-card.open .svc-img{display:block}
+  .svc-card.open .svc-desc{display:block}
+  .svc-card.open .svc-more{display:flex}
   /* Reduce oversized section padding on small screens */
   .usp-l,.usp-r{padding:44px 24px}
   .cta-banner{padding:52px 0}

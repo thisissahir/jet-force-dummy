@@ -259,3 +259,20 @@ function initSite(active) {
     });
   });
 }
+
+/* Mobile: service cards act as tap-to-expand tabs. First tap on a collapsed
+   card reveals its pictorial; a second tap follows the link to the service
+   page. Desktop (wider than 768px) keeps normal link behavior. */
+(function () {
+  var mq = window.matchMedia('(max-width: 768px)');
+  var cards = document.querySelectorAll('.svc-card');
+  cards.forEach(function (card) {
+    card.addEventListener('click', function (e) {
+      if (mq.matches && !card.classList.contains('open')) {
+        e.preventDefault();
+        cards.forEach(function (c) { if (c !== card) c.classList.remove('open'); });
+        card.classList.add('open');
+      }
+    });
+  });
+})();
