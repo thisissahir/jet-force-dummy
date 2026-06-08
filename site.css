@@ -70,7 +70,7 @@ h4{font-family:var(--fb);font-size:1.0625rem;font-weight:600;color:var(--nt-900)
 #site-header.scrolled{background:rgba(58,30,14,.97);backdrop-filter:blur(8px);box-shadow:0 2px 16px rgba(0,0,0,.25)}
 .nav-inner{height:var(--hdr);display:flex;align-items:center}
 .nav-logo{flex-shrink:0;margin-right:36px}
-.nav-logo img{height:38px;display:block}
+.nav-logo img{height:58px;display:block}
 .nav-links{display:flex;align-items:center;flex:1}
 .nav-link{padding:0 13px;height:var(--hdr);display:flex;align-items:center;font-size:.6875rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.65);transition:color 150ms;white-space:nowrap}
 .nav-link:hover,.nav-link.active{color:var(--ye-500)}
@@ -269,6 +269,7 @@ image-slot{border-radius:var(--r);overflow:hidden;display:block}
 }
 @media(max-width:768px){
   :root{--hdr:64px}
+  .nav-logo img{height:46px}
   .nav-links,.nav-actions{display:none}
   .nav-ham{display:flex}
   .img-2,.img-3{grid-template-columns:1fr}
