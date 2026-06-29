@@ -356,3 +356,8 @@ image-slot:not([src]){display:none}
 .jf-why-lead{max-width:800px;font-size:1.125rem;line-height:1.7;color:var(--nt-700);margin:0 auto 2rem}
 .jf-why-detail .usp-list{max-width:760px;margin:0 auto 2rem}
 .jf-why-detail .usp-list li{justify-content:center}
+
+/* ── Service photo gallery (masonry) ───────────────────────── */
+.svc-gallery{columns:2;column-gap:14px;margin:28px 0}
+.svc-gallery img{width:100%;height:auto;display:block;border-radius:var(--r);border:1px solid var(--nt-200);margin:0 0 14px;break-inside:avoid;background:var(--nt-100)}
+@media(max-width:560px){.svc-gallery{columns:1}}
