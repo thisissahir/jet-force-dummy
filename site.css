@@ -154,8 +154,8 @@ h4{font-family:var(--fb);font-size:1.0625rem;font-weight:600;color:var(--nt-900)
 .trust-pts{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px}
 .trust-pt{background:var(--white);border:1px solid var(--nt-200);border-radius:var(--r);padding:28px 24px}
 .trust-pt-ico{width:40px;height:40px;border-radius:var(--r);background:var(--ye-50);display:flex;align-items:center;justify-content:center;margin-bottom:14px;color:var(--ye-700)}
-.trust-pt h4{font-family:var(--fd);font-size:1.125rem;font-weight:700;color:var(--br-800);margin-bottom:8px}
-.trust-pt p{font-size:.9375rem;color:var(--nt-500);line-height:1.6}
+.trust-pt h4{font-family:var(--fd);font-size:1.5rem;font-weight:700;color:var(--br-800);margin-bottom:10px}
+.trust-pt p{font-size:1.0625rem;color:var(--nt-500);line-height:1.65}
 
 /* ── Areas ───────────────────────────────────────────────── */
 .areas-pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
