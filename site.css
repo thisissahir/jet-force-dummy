@@ -339,21 +339,9 @@ image-slot:not([src]){display:none}
   .hero::after{width:200px;height:240px;opacity:.10}
 }
 
-/* ── Lively service icons & cards ──────────────────────────── */
-.svc-ico{transition:background 200ms ease,color 200ms ease,transform 260ms cubic-bezier(.34,1.56,.64,1),box-shadow 200ms ease;will-change:transform}
-.svc-ico svg{transition:transform 260ms cubic-bezier(.34,1.56,.64,1)}
-.svc-more svg{transition:transform 200ms ease}
+/* ── Refined service icon & card interactions ──────────────── */
+.svc-ico{transition:background 220ms ease,color 220ms ease,transform 220ms ease,box-shadow 220ms ease}
+.svc-more svg{transition:transform 220ms ease}
 
-.svc-card:hover{transform:translateY(-6px)}
-.svc-card:hover .svc-ico{animation:none;transform:scale(1.14) rotate(-8deg);background:var(--ye-500);color:var(--br-950);box-shadow:0 8px 20px rgba(212,168,32,.45)}
-.svc-card:hover .svc-ico svg{transform:scale(1.1)}
-.svc-card:hover .svc-more svg{transform:translateX(5px)}
-
-/* Gentle continuous float so the grid feels alive at rest */
-@media (prefers-reduced-motion: no-preference){
-  @keyframes jf-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
-  .svc-card .svc-ico{animation:jf-float 3.6s ease-in-out infinite}
-  .svc-card:nth-child(4n+2) .svc-ico{animation-delay:.45s}
-  .svc-card:nth-child(4n+3) .svc-ico{animation-delay:.9s}
-  .svc-card:nth-child(4n+4) .svc-ico{animation-delay:1.35s}
-}
+.svc-card:hover .svc-ico{transform:scale(1.06);background:var(--ye-500);color:var(--br-950);box-shadow:0 6px 16px rgba(212,168,32,.30)}
+.svc-card:hover .svc-more svg{transform:translateX(4px)}
