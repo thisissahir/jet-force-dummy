@@ -361,3 +361,5 @@ image-slot:not([src]){display:none}
 .svc-gallery{columns:2;column-gap:14px;margin:28px 0}
 .svc-gallery img{width:100%;height:auto;display:block;border-radius:var(--r);border:1px solid var(--nt-200);margin:0 0 14px;break-inside:avoid;background:var(--nt-100)}
 @media(max-width:560px){.svc-gallery{columns:1}}
+/* A lone gallery image spans the full content width */
+.svc-gallery:has(img:only-child){columns:1}
