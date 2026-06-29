@@ -363,3 +363,5 @@ image-slot:not([src]){display:none}
 @media(max-width:560px){.svc-gallery{columns:1}}
 /* A lone gallery image spans the full content width */
 .svc-gallery:has(img:only-child){columns:1}
+/* Before/after feature image, smaller and centered, lower on the page */
+.jf-ba{display:block;width:100%;max-width:420px;height:auto;margin:36px auto 8px;border-radius:var(--r);border:1px solid var(--nt-200)}
