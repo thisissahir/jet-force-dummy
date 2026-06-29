@@ -50,7 +50,7 @@ h4{font-family:var(--fb);font-size:1.0625rem;font-weight:600;color:var(--nt-900)
 .bg-darkest{background:var(--br-950)}
 .bg-green{background:var(--gr-800)}
 .bg-br50{background:var(--br-50)}
-.eyebrow{display:block;font-family:var(--fb);font-size:.6875rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ye-500);margin-bottom:.75rem}
+.eyebrow{display:block;font-family:var(--fd);font-size:1.5rem;font-weight:700;letter-spacing:.04em;line-height:1.15;text-transform:uppercase;color:var(--ye-500);margin-bottom:.875rem}
 .accent-rule{display:block;width:40px;height:3px;background:var(--ye-500);margin-bottom:1.5rem}
 
 /* ── Buttons ─────────────────────────────────────────────── */
@@ -281,7 +281,7 @@ image-slot{border-radius:var(--r);overflow:hidden;display:block}
   .section{padding:56px 0}
   /* Prevent any element from forcing horizontal scroll on phones */
   html,body{overflow-x:hidden}
-  .eyebrow{font-size:.625rem;letter-spacing:.1em}
+  .eyebrow{font-size:1.25rem;letter-spacing:.04em}
   /* Hero: tighter spacing, full-width stacked badges */
   .hero{min-height:auto}
   .hero-content{padding:48px 0}
