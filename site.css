@@ -375,3 +375,16 @@ image-slot:not([src]){display:none}
 .jf-badge svg{color:var(--ye-500)}
 .jf-svc-title{color:var(--ye-500);font-weight:800;font-size:clamp(2rem,4.6vw,3.25rem);line-height:1.08;max-width:760px;margin:0 auto 18px}
 .jf-svc-sub{color:rgba(255,255,255,.78);max-width:600px;margin:0 auto;font-size:1.125rem;line-height:1.7}
+
+/* ── Animated "Our Promise" icons ──────────────────────────── */
+.trust-pt{transition:transform 200ms ease,box-shadow 200ms ease}
+.trust-pt:hover{transform:translateY(-4px);box-shadow:var(--sh2)}
+@media (prefers-reduced-motion: no-preference){
+  @keyframes jf-pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.16)}}
+  @keyframes jf-wobble{0%,100%{transform:rotate(0)}20%{transform:rotate(-9deg)}60%{transform:rotate(9deg)}}
+  @keyframes jf-ring{0%,58%,100%{transform:rotate(0)}64%{transform:rotate(-14deg)}70%{transform:rotate(12deg)}76%{transform:rotate(-9deg)}82%{transform:rotate(6deg)}88%{transform:rotate(-3deg)}}
+  .trust-pt-ico svg{transform-origin:center;transform-box:fill-box}
+  .trust-pt:nth-child(1) .trust-pt-ico svg{animation:jf-pulse 2.6s ease-in-out infinite}
+  .trust-pt:nth-child(2) .trust-pt-ico svg{animation:jf-wobble 3.2s ease-in-out infinite}
+  .trust-pt:nth-child(3) .trust-pt-ico svg{animation:jf-ring 3.4s ease-in-out infinite}
+}
