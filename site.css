@@ -368,3 +368,10 @@ image-slot:not([src]){display:none}
 .svc-features img{width:100%;height:auto;display:block;border-radius:var(--r);border:1px solid var(--nt-200);box-shadow:var(--sh1)}
 .svc-features img.jf-wide{grid-column:1 / -1}
 @media(max-width:560px){.svc-features{grid-template-columns:1fr}}
+
+/* ── Services hero band ────────────────────────────────────── */
+.jf-svc-hero{background:var(--br-900);text-align:center;padding:76px 0 68px}
+.jf-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(212,168,32,.14);border:1px solid var(--ye-500);color:var(--ye-500);font-family:var(--fb);font-size:.8125rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:9px 20px;border-radius:999px;margin-bottom:22px}
+.jf-badge svg{color:var(--ye-500)}
+.jf-svc-title{color:var(--ye-500);font-weight:800;font-size:clamp(2rem,4.6vw,3.25rem);line-height:1.08;max-width:760px;margin:0 auto 18px}
+.jf-svc-sub{color:rgba(255,255,255,.78);max-width:600px;margin:0 auto;font-size:1.125rem;line-height:1.7}
