@@ -388,3 +388,14 @@ image-slot:not([src]){display:none}
   .trust-pt:nth-child(2) .trust-pt-ico svg{animation:jf-wobble 3.2s ease-in-out infinite}
   .trust-pt:nth-child(3) .trust-pt-ico svg{animation:jf-ring 3.4s ease-in-out infinite}
 }
+
+/* ── Service area: core / extended / emergency ─────────────── */
+.jf-areas{display:grid;grid-template-columns:1.1fr 1.3fr 1fr;gap:20px;margin-top:36px;align-items:stretch}
+.jf-area{background:var(--nt-50);border:1px solid var(--nt-200);border-radius:var(--r);padding:26px 24px}
+.jf-area-tag{display:block;font-family:var(--fb);font-size:.6875rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gr-700);margin-bottom:16px}
+.jf-area .areas-pills{margin-top:0}
+.jf-area--cta{background:var(--br-900);display:flex;flex-direction:column;align-items:flex-start}
+.jf-area--cta .jf-area-tag{color:var(--ye-500)}
+.jf-area--cta p{color:rgba(255,255,255,.78);font-size:.9375rem;line-height:1.6;margin-bottom:auto}
+.jf-area--cta .btn{margin-top:18px}
+@media(max-width:768px){.jf-areas{grid-template-columns:1fr}}
