@@ -346,3 +346,9 @@ image-slot:not([src]){display:none}
 .svc-card:hover .svc-ico{transform:scale(1.06);background:var(--ye-500);color:var(--br-950);box-shadow:0 6px 16px rgba(212,168,32,.30)}
 .svc-card:hover .svc-more svg{transform:translateX(4px)}
 
+
+/* ── Why Jet Force: full-width green intro + detail below ───── */
+.jf-why h2{color:#fff;max-width:780px}
+.jf-why p{color:rgba(255,255,255,.82);max-width:700px;font-size:1.0625rem;line-height:1.7;margin:0}
+.jf-why-lead{max-width:800px;font-size:1.125rem;line-height:1.7;color:var(--nt-700);margin-bottom:2rem}
+.jf-why-detail .usp-list{max-width:760px;margin-bottom:2rem}
