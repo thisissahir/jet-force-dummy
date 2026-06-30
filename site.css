@@ -165,12 +165,12 @@ h4{font-family:var(--fb);font-size:1.0625rem;font-weight:600;color:var(--nt-900)
 .svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px 24px}
 .svc-card{display:flex;align-items:flex-start;gap:14px;background:transparent;border:0;border-radius:0;padding:0;box-shadow:none;transition:transform 180ms ease}
 .svc-card:hover{transform:translateY(-3px)}
-.svc-ico{width:50px;height:50px;border-radius:12px;background:var(--ye-50);display:flex;align-items:center;justify-content:center;color:var(--br-900);flex-shrink:0;transition:transform 180ms ease,box-shadow 180ms ease}
-.svc-ico svg{width:28px;height:28px}
+.svc-ico{width:62px;height:62px;border-radius:14px;background:var(--ye-50);display:flex;align-items:center;justify-content:center;color:var(--br-900);flex-shrink:0;transition:transform 180ms ease,box-shadow 180ms ease}
+.svc-ico svg{width:34px;height:34px}
 .svc-card:hover .svc-ico{transform:scale(1.06);box-shadow:0 6px 16px rgba(0,0,0,.3)}
 .svc-body{min-width:0}
-.svc-name{font-family:var(--fd);font-size:1.125rem;font-weight:700;text-transform:uppercase;letter-spacing:.02em;color:#fff;margin-bottom:5px;line-height:1.12}
-.svc-desc{font-size:.875rem;color:rgba(255,255,255,.62);line-height:1.5;margin:0}
+.svc-name{font-family:var(--fd);font-size:1.3125rem;font-weight:700;text-transform:uppercase;letter-spacing:.02em;color:#fff;margin-bottom:6px;line-height:1.1}
+.svc-desc{font-size:.9688rem;color:rgba(255,255,255,.68);line-height:1.5;margin:0}
 
 /* ── USP Split ───────────────────────────────────────────── */
 .usp-wrap{display:grid;grid-template-columns:5fr 7fr}
