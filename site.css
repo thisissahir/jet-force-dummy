@@ -215,12 +215,12 @@ h4{font-family:var(--fb);font-size:1.0625rem;font-weight:600;color:var(--nt-900)
 .cta-phone-num{font-family:var(--fm);font-size:1.5rem;font-weight:500;color:var(--ye-500);letter-spacing:.02em}
 
 /* ── Page Hero (service/contact pages) ──────────────────── */
-.page-hero{padding-top:var(--hdr);background:var(--br-800)}
+.page-hero{padding-top:var(--hdr);background:linear-gradient(135deg,#1A1F23 0%,#0F3D2E 100%)}
 .page-hero-inner{padding:56px 0 52px}
 .breadcrumb{display:flex;align-items:center;gap:8px;margin-bottom:16px;font-size:.75rem;color:rgba(255,255,255,.35)}
 .breadcrumb a{color:rgba(255,255,255,.45);transition:color 150ms}
 .breadcrumb a:hover{color:var(--ye-500)}
-.page-hero h1{color:#fff;margin-bottom:14px}
+.page-hero h1{color:#fff;margin-bottom:14px;font-size:clamp(2.75rem,7.5vw,5rem);line-height:.95;letter-spacing:.01em}
 .page-hero .hero-desc{font-size:1.0625rem;color:rgba(255,255,255,.62);max-width:580px;line-height:1.65;margin:0}
 
 /* ── Service Page Layout ─────────────────────────────────── */
