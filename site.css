@@ -159,16 +159,18 @@ h4{font-family:var(--fb);font-size:1.0625rem;font-weight:600;color:var(--nt-900)
 .trust-lbl{font-size:1rem;font-weight:600;color:var(--br-700);margin-top:5px;letter-spacing:.01em}
 
 /* ── Service Cards ───────────────────────────────────────── */
-.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
-.svc-card{display:block;background:var(--white);border:1px solid var(--nt-200);border-top:3px solid transparent;border-radius:var(--r);padding:34px 28px;box-shadow:var(--sh1);transition:all 180ms ease}
-.svc-card:hover{border-top-color:var(--ye-500);box-shadow:var(--sh2);transform:translateY(-3px)}
-.svc-card:hover .svc-ico{background:var(--ye-500);color:var(--br-950)}
-.svc-ico{width:54px;height:54px;border-radius:var(--r);background:var(--ye-50);display:flex;align-items:center;justify-content:center;margin-bottom:18px;color:var(--br-900);transition:background 180ms,color 180ms}
-.svc-ico svg{width:27px;height:27px}
-.svc-name{font-family:var(--fd);font-size:1.375rem;font-weight:800;color:var(--br-900);margin-bottom:9px;line-height:1.12;letter-spacing:.01em}
-.svc-desc{font-size:.9375rem;color:var(--nt-500);line-height:1.6;margin-bottom:16px}
-.svc-more{font-size:.8125rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--br-700);display:flex;align-items:center;gap:5px;transition:color 150ms}
-.svc-card:hover .svc-more{color:var(--ye-700)}
+/* Our Services: dark navy backdrop, horizontal icon-left cards */
+.svc-section{background:var(--br-900)}
+.svc-head h2{color:#fff}
+.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px 24px}
+.svc-card{display:flex;align-items:flex-start;gap:14px;background:transparent;border:0;border-radius:0;padding:0;box-shadow:none;transition:transform 180ms ease}
+.svc-card:hover{transform:translateY(-3px)}
+.svc-ico{width:50px;height:50px;border-radius:12px;background:var(--ye-50);display:flex;align-items:center;justify-content:center;color:var(--br-900);flex-shrink:0;transition:transform 180ms ease,box-shadow 180ms ease}
+.svc-ico svg{width:28px;height:28px}
+.svc-card:hover .svc-ico{transform:scale(1.06);box-shadow:0 6px 16px rgba(0,0,0,.3)}
+.svc-body{min-width:0}
+.svc-name{font-family:var(--fd);font-size:1.125rem;font-weight:700;text-transform:uppercase;letter-spacing:.02em;color:#fff;margin-bottom:5px;line-height:1.12}
+.svc-desc{font-size:.875rem;color:rgba(255,255,255,.62);line-height:1.5;margin:0}
 
 /* ── USP Split ───────────────────────────────────────────── */
 .usp-wrap{display:grid;grid-template-columns:5fr 7fr}
@@ -413,8 +415,7 @@ image-slot:not([src]){display:none}
 .svc-ico{transition:background 220ms ease,color 220ms ease,transform 220ms ease,box-shadow 220ms ease}
 .svc-more svg{transition:transform 220ms ease}
 
-.svc-card:hover .svc-ico{transform:scale(1.06);background:var(--ye-500);color:var(--br-950);box-shadow:0 6px 16px rgba(255,193,7,.30)}
-.svc-card:hover .svc-more svg{transform:translateX(4px)}
+.svc-card:hover .svc-ico{transform:scale(1.06);box-shadow:0 6px 16px rgba(0,0,0,.3)}
 
 
 /* ── Why Jet Force: full-width green intro + detail below ───── */
