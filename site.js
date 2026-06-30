@@ -162,8 +162,8 @@ function buildCTA() {
     <div class="cta-row">
       <div>
         <span class="accent-rule"></span>
-        <h2>Need Grease Trap, Drain, Sewer, or Underground Pipe Help?</h2>
-        <p>Call Jet Force for a clear diagnosis, honest options, and service across the Denver metro area.</p>
+        <h2>Need Underground Help Now?</h2>
+        <p>Call Jet Force for one crew, clear diagnosis, and honest underground service across the Denver metro.</p>
       </div>
       <div class="cta-actions">
         <a href="${JF.phoneHref}" class="btn btn-primary">${IC.phone} Call Now</a>

@@ -507,3 +507,21 @@ image-slot:not([src]){display:none}
 .jf-faq-cta{text-align:center;margin-top:48px;padding-top:40px;border-top:1px solid var(--nt-200)}
 .jf-faq-cta p{color:var(--nt-500)}
 .jf-faq-cta .hero-btns{justify-content:center;margin-top:20px;display:flex;gap:14px;flex-wrap:wrap}
+
+/* ── Hero trust line ───────────────────────────────────────── */
+.hero-trustline{color:rgba(255,255,255,.62);font-size:.9375rem;font-weight:500;margin:-22px 0 34px;max-width:560px}
+
+/* ── Buyer pathway cards ───────────────────────────────────── */
+.jf-pathgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:32px}
+.jf-pathcard{display:flex;flex-direction:column;background:var(--white);border:1px solid var(--nt-200);border-radius:var(--r);padding:24px 22px;box-shadow:var(--sh1);transition:transform .18s ease,box-shadow .18s ease}
+.jf-pathcard:hover{transform:translateY(-3px);box-shadow:var(--sh2)}
+.jf-pathcard-ico{width:48px;height:48px;border-radius:12px;background:var(--gr-50);color:var(--gr-700);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.jf-pathcard h3{font-size:1.3rem;margin-bottom:8px}
+.jf-pathcard p{font-size:.9375rem;color:var(--nt-500);line-height:1.6;margin-bottom:18px}
+.jf-pathcard-btn{margin-top:auto;display:inline-flex;align-items:center;gap:6px;font-family:var(--fb);font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--gr-700);transition:color .15s}
+.jf-pathcard:hover .jf-pathcard-btn{color:var(--ye-700)}
+.jf-pathcard--urgent{border-top:3px solid var(--ye-500)}
+.jf-pathcard--urgent .jf-pathcard-ico{background:var(--ye-50);color:var(--ye-700)}
+.jf-pathcard-btn--call{color:var(--ye-700)}
+@media(max-width:900px){.jf-pathgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.jf-pathgrid{grid-template-columns:1fr}}
