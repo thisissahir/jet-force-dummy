@@ -91,7 +91,7 @@ h4{font-family:var(--fb);font-size:1.0625rem;font-weight:600;color:var(--nt-900)
 #site-header.scrolled{background:rgba(19,37,58,.97);backdrop-filter:blur(8px);box-shadow:0 2px 16px rgba(0,0,0,.25)}
 .nav-inner{height:var(--hdr);display:flex;align-items:center}
 .nav-logo{flex-shrink:0;margin-right:32px;display:flex;align-items:center;gap:11px}
-.nav-logo-mark{height:46px;width:auto;display:block}
+.nav-logo-mark{height:56px;width:auto;display:block}
 .nav-logo--mark{margin-right:28px}
 .nav-logo--mark .nav-logo-mark{height:80px}
 .nav-logo-wm{display:flex;flex-direction:column;line-height:1}
@@ -298,7 +298,9 @@ image-slot{border-radius:var(--r);overflow:hidden;display:block}
 }
 @media(max-width:768px){
   :root{--hdr:74px}
-  .nav-logo--mark .nav-logo-mark{height:58px}
+  .nav-logo-mark{height:46px}
+  .nav-logo-name{font-size:1.2rem}
+  .nav-logo-sub{font-size:.44rem}
   .nav-links,.nav-actions{display:none}
   .nav-ham{display:flex}
   .img-2,.img-3{grid-template-columns:1fr}
