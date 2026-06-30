@@ -151,11 +151,12 @@ h4{font-family:var(--fb);font-size:1.0625rem;font-weight:600;color:var(--nt-900)
 /* ── Trust Bar ───────────────────────────────────────────── */
 .trust-bar{background:var(--white);border-bottom:1px solid var(--nt-200)}
 .trust-grid{display:grid;grid-template-columns:repeat(4,1fr)}
-.trust-item{display:flex;align-items:center;gap:14px;padding:24px 20px;border-right:1px solid var(--nt-200)}
+.trust-item{display:flex;align-items:center;gap:18px;padding:34px 26px;border-right:1px solid var(--nt-200)}
 .trust-item:last-child{border-right:none}
-.trust-ico{width:44px;height:44px;border-radius:var(--r);background:var(--ye-50);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--ye-700)}
-.trust-val{font-family:var(--fd);font-size:1.625rem;font-weight:800;color:var(--br-800);line-height:1}
-.trust-lbl{font-size:.75rem;font-weight:500;color:var(--nt-500);margin-top:3px;letter-spacing:.02em}
+.trust-ico{width:58px;height:58px;border-radius:14px;background:var(--ye-50);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--ye-700)}
+.trust-ico svg{width:28px;height:28px}
+.trust-val{font-family:var(--fd);font-size:2.25rem;font-weight:800;color:var(--br-800);line-height:1;letter-spacing:.01em}
+.trust-lbl{font-size:1rem;font-weight:600;color:var(--br-700);margin-top:5px;letter-spacing:.01em}
 
 /* ── Service Cards ───────────────────────────────────────── */
 .svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
@@ -331,8 +332,13 @@ image-slot{border-radius:var(--r);overflow:hidden;display:block}
 @media(max-width:480px){
   .svc-grid{grid-template-columns:1fr}
   .trust-grid{grid-template-columns:1fr 1fr}
-  .trust-item{border-right:none !important;border-bottom:1px solid var(--nt-200)}
+  .trust-item{border-right:none !important;border-bottom:1px solid var(--nt-200);padding:22px 16px;gap:13px}
+  .trust-item:nth-child(2){border-bottom:1px solid var(--nt-200)}
   .trust-item:last-child{border-bottom:none}
+  .trust-ico{width:48px;height:48px}
+  .trust-ico svg{width:24px;height:24px}
+  .trust-val{font-size:1.75rem}
+  .trust-lbl{font-size:.875rem}
   .related-grid{grid-template-columns:1fr}
   .hero-btns{flex-direction:column;align-items:flex-start}
   .foot-grid{grid-template-columns:1fr;gap:24px}
