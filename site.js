@@ -42,7 +42,10 @@ function buildNav(active) {
   return `
 <header id="site-header">
   <div class="container nav-inner">
-    <a href="index.html" class="nav-logo"><img src="../assets/logo-white.svg" alt="Jet Force Grease &amp; Pipe Solutions"></a>
+    <a href="index.html" class="nav-logo">
+      <img class="nav-logo-mark" src="../assets/jf-mark-white.png" alt="">
+      <span class="nav-logo-wm"><span class="nav-logo-name">JET FORCE</span><span class="nav-logo-sub">Grease &amp; Pipe Solutions</span></span>
+    </a>
     <nav class="nav-links">
       <div class="nav-drop">
         <button class="nav-drop-btn">Services ${IC.chevD}</button>
@@ -50,6 +53,7 @@ function buildNav(active) {
       </div>
       <a href="index.html#why-us" class="nav-link">Why Jet Force</a>
       <a href="index.html#areas" class="nav-link">Service Areas</a>
+      <a href="faq.html" class="nav-link${active==='faq.html'?' active':''}">FAQ</a>
       <a href="contact.html" class="nav-link${active==='contact.html'?' active':''}">Contact</a>
     </nav>
     <div class="nav-actions">
@@ -68,6 +72,7 @@ function buildNav(active) {
   <a href="index.html">Home</a>
   <a href="index.html#why-us">Why Jet Force</a>
   <a href="index.html#areas">Service Areas</a>
+  <a href="faq.html">FAQ</a>
   <a href="contact.html">Contact</a>
   <a href="${JF.phoneHref}" class="mob-cta">${IC.phone} &nbsp;${JF.phone}</a>
   <a href="contact.html" class="mob-cta-ghost">Get a Free Quote</a>
@@ -85,7 +90,10 @@ function buildFooter() {
   <div class="container">
     <div class="foot-grid">
       <div>
-        <img src="../assets/logo-white.svg" alt="Jet Force" class="foot-logo">
+        <div class="foot-logo-lockup">
+          <img class="nav-logo-mark" src="../assets/jf-mark-white.png" alt="Jet Force Grease &amp; Pipe Solutions">
+          <span class="nav-logo-wm"><span class="nav-logo-name">JET FORCE</span><span class="nav-logo-sub">Grease &amp; Pipe Solutions</span></span>
+        </div>
         <p class="foot-about">Denver's underground specialists — sewer line jetting, sewer and water line repair, grease traps, leak detection, and more. One call handles it all. No down payment required.</p>
         <div class="foot-info">${IC.map} ${JF.location}</div>
         <div class="foot-info">${IC.phone} <a href="${JF.phoneHref}">${JF.phone}</a></div>
