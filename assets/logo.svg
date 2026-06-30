@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 72" fill="none">
   
-  <polygon points="0,70 16,70 32,2 16,2" fill="#D4A820"></polygon>
-  <polygon points="19,70 31,70 47,2 35,2" fill="#2E6329"></polygon>
-  <polygon points="34,70 44,70 60,2 50,2" fill="#7A4028"></polygon>
+  <polygon points="0,70 16,70 32,2 16,2" fill="#F5B800"></polygon>
+  <polygon points="19,70 31,70 47,2 35,2" fill="#1A4D35"></polygon>
+  <polygon points="34,70 44,70 60,2 50,2" fill="#145E5A"></polygon>
   
-  <text x="70" y="52" font-family="&#39;Barlow Condensed&#39;, &#39;Arial Narrow&#39;, sans-serif" font-weight="800" font-size="46" letter-spacing="-1" fill="#5A2E18">JET FORCE</text>
+  <text x="70" y="52" font-family="&#39;Barlow Condensed&#39;, &#39;Arial Narrow&#39;, sans-serif" font-weight="800" font-size="46" letter-spacing="-1" fill="#1A4D35">JET FORCE</text>
   
-  <text x="71" y="66" font-family="&#39;Barlow&#39;, Arial, sans-serif" font-weight="500" font-size="10" letter-spacing="3" fill="#806050">GREASE &amp; PIPE SOLUTIONS</text>
+  <text x="71" y="66" font-family="&#39;Barlow&#39;, Arial, sans-serif" font-weight="500" font-size="10" letter-spacing="3" fill="#5C6970">GREASE &amp; PIPE SOLUTIONS</text>
 </svg>
