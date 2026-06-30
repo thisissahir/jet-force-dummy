@@ -303,7 +303,7 @@ image-slot{border-radius:var(--r);overflow:hidden;display:block}
   .nav-ham{display:flex}
   .img-2,.img-3{grid-template-columns:1fr}
   .related-grid{grid-template-columns:1fr 1fr}
-  .trust-pts{grid-template-columns:1fr}
+  .trust-pts{grid-template-columns:1fr 1fr}
   .cta-row{flex-direction:column;text-align:center}
   .cta-phone{align-items:center}
   .usp-list{grid-template-columns:1fr}
@@ -460,7 +460,8 @@ image-slot:not([src]){display:none}
 .jf-proof-shot img{width:100%;height:210px;object-fit:cover;display:block;transition:transform 450ms ease}
 .jf-proof-shot:hover img{transform:scale(1.05)}
 .jf-proof-shot span{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(19,37,58,.88));font-family:var(--fd);font-weight:600;font-size:.9375rem;padding:30px 14px 12px}
-@media(max-width:768px){.jf-proof,.jf-proof-gallery{grid-template-columns:1fr}}
+@media(max-width:768px){.jf-proof,.jf-proof-gallery{grid-template-columns:1fr 1fr}}
+@media(max-width:540px){.trust-pts,.jf-proof,.jf-proof-gallery{grid-template-columns:1fr}}
 
 /* ── Home FAQ ──────────────────────────────────────────────── */
 .jf-faq{display:flex;flex-direction:column;gap:12px;margin-top:32px}
