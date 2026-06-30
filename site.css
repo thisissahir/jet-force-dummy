@@ -2,43 +2,44 @@
    Jet Force Grease & Pipe Solutions — Site Stylesheet
    Barlow Condensed (display) · Barlow (body) · Roboto Mono
    ============================================================ */
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&family=Barlow:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@400;500&display=swap');
 
 /* ── Tokens ──────────────────────────────────────────────── */
 :root {
-  /* ── Color System V3 — canonical brand tokens (source of truth) ── */
-  --jf-green:    #1A4D35;   /* Pipe Green — primary brand */
-  --jf-charcoal: #1A1F23;   /* Iron Charcoal — dark anchor */
-  --jf-gold:     #F5B800;   /* Utility Gold — CTA / accent */
-  --jf-teal:     #145E5A;   /* Mineral Teal — water services only */
-  --jf-concrete: #E6E8EB;   /* Concrete — section backgrounds */
-  --jf-white:    #FAFBFC;   /* Clean White — cards / forms */
+  /* ── Jet Force brand palette (precise) ── */
+  --jf-green:    #1D6B43;   /* Pipe Green — primary brand */
+  --jf-navy:     #13253A;   /* Midnight Navy — dark anchor */
+  --jf-steel:    #6B737B;   /* Steel Gray — secondary text */
+  --jf-concrete: #F2F3F1;   /* Concrete — section backgrounds */
+  --jf-sage:     #A7B7A1;   /* Sage — soft accent */
+  --jf-gold:     #FFC107;   /* Safety Gold — CTA / accent */
+  --jf-white:    #FFFFFF;   /* cards / forms */
 
-  /* Iron Charcoal scale — navbar, footer, hero bg, dark chrome (--br-*) */
-  --br-950:#14181B; --br-900:var(--jf-charcoal); --br-800:#232B30;
-  --br-700:#2F383E; --br-600:#3D474E; --br-400:#6E7980;
-  --br-100:#C9CFD3; --br-50:#EEF0F2;
+  /* Midnight Navy scale — navbar, footer, hero bg, dark chrome (--br-*) */
+  --br-950:#0C1726; --br-900:var(--jf-navy); --br-800:#1B3149;
+  --br-700:#294764; --br-600:#3B5A78; --br-400:#7787A0;
+  --br-100:#C4CCD6; --br-50:#EDF0F4;
 
   /* Pipe Green scale — headers, logo, dark sections (--gr-*) */
-  --gr-800:#143D2A; --gr-700:var(--jf-green); --gr-600:#236B49; --gr-50:#E7F0EB;
+  --gr-800:#14502F; --gr-700:var(--jf-green); --gr-600:#2A8455; --gr-50:#E7F1EB;
 
-  /* Utility Gold scale — CTA, buttons, accent rules, badges (--ye-*) */
-  --ye-700:#C28F00; --ye-500:var(--jf-gold); --ye-300:#FBD45E; --ye-50:#FFF6DC;
+  /* Safety Gold scale — CTA, buttons, accent rules, badges (--ye-*) */
+  --ye-700:#C99400; --ye-500:var(--jf-gold); --ye-300:#FFD75E; --ye-50:#FFF8E1;
 
-  /* Concrete + cool neutrals — backgrounds, dividers, text (--nt-*) */
-  --nt-900:#1F262B; --nt-700:#3A454C; --nt-500:#5C6970;
-  --nt-200:#CFD5D9; --nt-100:var(--jf-concrete); --nt-50:#F4F6F7;
+  /* Concrete + Steel neutrals — backgrounds, dividers, text (--nt-*) */
+  --nt-900:#1E2933; --nt-700:#3C4955; --nt-500:var(--jf-steel);
+  --nt-200:#D7DAD7; --nt-100:var(--jf-concrete); --nt-50:#F7F8F6;
   --white:var(--jf-white);
 
-  /* Mineral Teal — supporting accent, water-related pages only */
-  --teal-700:var(--jf-teal); --teal-600:#1A7771; --teal-50:#E3F0EF;
+  /* Sage — soft supporting accent */
+  --sage-500:var(--jf-sage); --sage-50:#EAF0E8;
 
-  --fd:'Barlow Condensed','Arial Narrow',sans-serif;
-  --fb:'Barlow',Arial,sans-serif;
+  --fd:'Bebas Neue','Arial Narrow',sans-serif;
+  --fb:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;
   --fm:'Roboto Mono','Courier New',monospace;
   --hdr:72px; --mxw:1200px; --r:4px;
-  --sh1:0 2px 8px rgba(20,24,27,.08);
-  --sh2:0 6px 20px rgba(20,24,27,.14);
+  --sh1:0 2px 8px rgba(19,37,58,.08);
+  --sh2:0 6px 20px rgba(19,37,58,.14);
 }
 
 /* ── Reset ───────────────────────────────────────────────── */
@@ -53,7 +54,7 @@ ul,ol{padding:0;list-style:none}
 button{font-family:var(--fb)}
 
 /* ── Type ────────────────────────────────────────────────── */
-h1,h2,h3{font-family:var(--fd);font-weight:700;line-height:1.1;letter-spacing:-.02em;color:var(--gr-700);margin:0 0 1rem}
+h1,h2,h3{font-family:var(--fd);font-weight:700;line-height:1.04;letter-spacing:.01em;color:var(--gr-700);margin:0 0 1rem}
 h1{font-size:clamp(2.25rem,5vw,3.75rem);font-weight:800}
 h2{font-size:clamp(1.75rem,3.5vw,2.5rem)}
 h3{font-size:clamp(1.25rem,2.5vw,1.625rem)}
@@ -76,7 +77,7 @@ h4{font-family:var(--fb);font-size:1.0625rem;font-weight:600;color:var(--nt-900)
 /* ── Buttons ─────────────────────────────────────────────── */
 .btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--fb);font-size:.8125rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:14px 30px;border-radius:var(--r);border:none;cursor:pointer;white-space:nowrap;transition:background 150ms,transform 150ms,box-shadow 150ms,border-color 150ms,color 150ms}
 .btn:active{transform:scale(.97)}
-.btn-primary{background:var(--ye-500);color:var(--br-950);box-shadow:0 4px 14px rgba(245,184,0,.28)}
+.btn-primary{background:var(--ye-500);color:var(--br-950);box-shadow:0 4px 14px rgba(255,193,7,.28)}
 .btn-primary:hover{background:var(--ye-700);transform:translateY(-1px);color:var(--br-950)}
 .btn-ghost-white{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.3);font-family:var(--fm);font-weight:500}
 .btn-ghost-white:hover{border-color:rgba(255,255,255,.7);background:rgba(255,255,255,.06)}
@@ -87,7 +88,7 @@ h4{font-family:var(--fb);font-size:1.0625rem;font-weight:600;color:var(--nt-900)
 
 /* ── Header ──────────────────────────────────────────────── */
 #site-header{position:fixed;top:0;left:0;right:0;z-index:500;height:var(--hdr);background:var(--br-800);border-bottom:1px solid rgba(255,255,255,.05);transition:background 200ms,box-shadow 200ms}
-#site-header.scrolled{background:rgba(26,31,35,.97);backdrop-filter:blur(8px);box-shadow:0 2px 16px rgba(0,0,0,.25)}
+#site-header.scrolled{background:rgba(19,37,58,.97);backdrop-filter:blur(8px);box-shadow:0 2px 16px rgba(0,0,0,.25)}
 .nav-inner{height:var(--hdr);display:flex;align-items:center}
 .nav-logo{flex-shrink:0;margin-right:36px}
 .nav-logo img{height:58px;display:block}
@@ -264,7 +265,7 @@ image-slot{border-radius:var(--r);overflow:hidden;display:block}
 .ci-card h3{color:#fff;font-size:1.25rem;margin-bottom:20px}
 .ci-row{display:flex;gap:14px;margin-bottom:18px;align-items:flex-start}
 .ci-row:last-child{margin-bottom:0}
-.ci-ico{width:36px;height:36px;border-radius:3px;background:rgba(245,184,0,.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--ye-500)}
+.ci-ico{width:36px;height:36px;border-radius:3px;background:rgba(255,193,7,.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--ye-500)}
 .ci-main{font-family:var(--fm);font-size:.875rem;font-weight:500;color:#fff}
 .ci-sub{font-size:.75rem;color:rgba(255,255,255,.4);margin-top:2px}
 .ct-card{background:var(--nt-50);border:1px solid var(--nt-200);border-radius:var(--r);padding:20px 24px}
@@ -335,14 +336,14 @@ image-slot:not([src]){display:none}
 
 /* Home hero banner photo with brand overlay (darker left for legibility). */
 .hero--photo{
-  background:linear-gradient(90deg, rgba(20,24,27,.94) 0%, rgba(20,24,27,.80) 45%, rgba(20,24,27,.50) 100%), url('assets/photos/home-banner.jpg');
+  background:linear-gradient(90deg, rgba(19,37,58,.94) 0%, rgba(19,37,58,.80) 45%, rgba(19,37,58,.50) 100%), url('assets/photos/home-banner.jpg');
   background-size:cover;
   background-position:center;
   background-repeat:no-repeat;
 }
 @media (max-width:760px){
   .hero--photo{
-    background:linear-gradient(rgba(20,24,27,.84), rgba(20,24,27,.88)), url('assets/photos/home-banner.jpg');
+    background:linear-gradient(rgba(19,37,58,.84), rgba(19,37,58,.88)), url('assets/photos/home-banner.jpg');
     background-size:cover;
     background-position:center;
   }
@@ -362,7 +363,7 @@ image-slot:not([src]){display:none}
 .svc-ico{transition:background 220ms ease,color 220ms ease,transform 220ms ease,box-shadow 220ms ease}
 .svc-more svg{transition:transform 220ms ease}
 
-.svc-card:hover .svc-ico{transform:scale(1.06);background:var(--ye-500);color:var(--br-950);box-shadow:0 6px 16px rgba(245,184,0,.30)}
+.svc-card:hover .svc-ico{transform:scale(1.06);background:var(--ye-500);color:var(--br-950);box-shadow:0 6px 16px rgba(255,193,7,.30)}
 .svc-card:hover .svc-more svg{transform:translateX(4px)}
 
 
@@ -390,7 +391,7 @@ image-slot:not([src]){display:none}
 
 /* ── Services hero band ────────────────────────────────────── */
 .jf-svc-hero{background:var(--gr-800);text-align:center;padding:76px 0 68px}
-.jf-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(245,184,0,.14);border:1px solid var(--ye-500);color:var(--ye-500);font-family:var(--fb);font-size:.8125rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:9px 20px;border-radius:999px;margin-bottom:22px}
+.jf-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,193,7,.14);border:1px solid var(--ye-500);color:var(--ye-500);font-family:var(--fb);font-size:.8125rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:9px 20px;border-radius:999px;margin-bottom:22px}
 .jf-badge svg{color:var(--ye-500)}
 .jf-svc-title{color:var(--ye-500);font-weight:800;font-size:clamp(2rem,4.6vw,3.25rem);line-height:1.08;max-width:760px;margin:0 auto 18px}
 .jf-svc-sub{color:rgba(255,255,255,.78);max-width:600px;margin:0 auto;font-size:1.125rem;line-height:1.7}
@@ -450,7 +451,7 @@ image-slot:not([src]){display:none}
 .jf-proof-shot{display:block;position:relative;border-radius:var(--r);overflow:hidden;border:1px solid var(--nt-200);color:#fff}
 .jf-proof-shot img{width:100%;height:210px;object-fit:cover;display:block;transition:transform 450ms ease}
 .jf-proof-shot:hover img{transform:scale(1.05)}
-.jf-proof-shot span{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(20,24,27,.88));font-family:var(--fd);font-weight:600;font-size:.9375rem;padding:30px 14px 12px}
+.jf-proof-shot span{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(19,37,58,.88));font-family:var(--fd);font-weight:600;font-size:.9375rem;padding:30px 14px 12px}
 @media(max-width:768px){.jf-proof,.jf-proof-gallery{grid-template-columns:1fr}}
 
 /* ── Home FAQ ──────────────────────────────────────────────── */
@@ -463,10 +464,3 @@ image-slot:not([src]){display:none}
 .jf-faq__a{padding:0 22px 20px;color:var(--nt-500)}
 .jf-faq__a p{margin:0;line-height:1.65}
 
-/* ── Water-service pages: Mineral Teal accent (green -> teal) ─ */
-.jf-water{
-  --gr-800:#103C39;
-  --gr-700:var(--jf-teal);
-  --gr-600:var(--teal-600);
-  --gr-50:var(--teal-50);
-}
