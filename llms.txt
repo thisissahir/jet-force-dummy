@@ -1,0 +1,24 @@
+# Jet Force Grease & Pipe Solutions
+
+> Denver metro underground services company. One crew for grease traps, drain and sewer cleaning, sewer scope camera inspections, sewer and water line repair, underground pipe repair, leak detection, and water extraction. Clear diagnosis first, honest options, and no down payment required on approved jobs. 24/7 emergency line.
+
+## About
+- Service area: Denver, Colorado metro (Denver, Aurora, Lakewood, Englewood, Littleton, Centennial, Greenwood Village, Arvada, Westminster, Broomfield).
+- Customers served: homeowners, restaurants, commercial properties, and B2B partners.
+- Approach: diagnose first (camera scope or leak location when needed), explain findings and options, then do the work after the customer approves. Licensed and insured in Colorado.
+- Phone: (555) 555-5555 (24/7 emergency line).
+
+## Services
+- [Main Sewer Line Jetting](https://jet-force-dummy-ti2h.vercel.app/main-sewer-line-jetting.html): High-pressure jetting that clears grease, roots, and debris from sewer lines and storm drains.
+- [Sewer Scope & Camera Inspections](https://jet-force-dummy-ti2h.vercel.app/sewer-scope-inspections.html): High-definition camera inspections that pinpoint blockages, cracks, and root intrusion underground.
+- [Sewer / Underground Pipe Repair](https://jet-force-dummy-ti2h.vercel.app/sewer-line-repair.html): Trenchless and traditional sewer repair, replacement, and root removal.
+- [Grease Trap Cleaning](https://jet-force-dummy-ti2h.vercel.app/grease-trap-cleaning.html): Scheduled pumping, cleaning, and FOG management for restaurants and commercial kitchens.
+- [Water Line Services](https://jet-force-dummy-ti2h.vercel.app/water-line-repair.html): Underground water service line leak detection, repair, and replacement.
+- [Underground Fire Line Repair](https://jet-force-dummy-ti2h.vercel.app/underground-fire-line-repair.html): Fire service line repair, leak detection, and replacement to keep protection systems compliant.
+- [Leak Detection](https://jet-force-dummy-ti2h.vercel.app/leak-detection.html): Non-invasive detection that locates hidden water, slab, and underground leaks.
+- [Water Extraction](https://jet-force-dummy-ti2h.vercel.app/water-extraction.html): Emergency water removal, flood cleanup, and structural drying.
+
+## Key pages
+- [Home](https://jet-force-dummy-ti2h.vercel.app/): Overview of all underground services and how Jet Force works.
+- [Contact / Free Quote](https://jet-force-dummy-ti2h.vercel.app/contact.html): Request a free, no-obligation estimate.
+- [FAQ](https://jet-force-dummy-ti2h.vercel.app/faq.html): Common questions about service, pricing, emergencies, and the no-down-payment policy.
