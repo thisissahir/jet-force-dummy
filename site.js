@@ -154,15 +154,12 @@ function buildCTA() {
     <div class="cta-row">
       <div>
         <span class="accent-rule"></span>
-        <h2>Ready to Get It Handled?</h2>
-        <p>Call us now or request a free quote online — we respond fast.</p>
+        <h2>Need Grease Trap, Drain, Sewer, or Underground Pipe Help?</h2>
+        <p>Call Jet Force for a clear diagnosis, honest options, and service across the Denver metro area.</p>
       </div>
       <div class="cta-actions">
-        <a href="${JF.phoneHref}" class="cta-phone">
-          <span class="cta-phone-lbl">Call</span>
-          <span class="cta-phone-num">${JF.phone}</span>
-        </a>
-        <a href="contact.html" class="btn btn-primary">Get a Free Quote</a>
+        <a href="${JF.phoneHref}" class="btn btn-primary">${IC.phone} Call Now</a>
+        <a href="contact.html" class="btn btn-ghost-white">Request a Free Estimate</a>
       </div>
     </div>
   </div>

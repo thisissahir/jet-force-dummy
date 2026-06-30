@@ -50,7 +50,8 @@ h4{font-family:var(--fb);font-size:1.0625rem;font-weight:600;color:var(--nt-900)
 .bg-darkest{background:var(--br-950)}
 .bg-green{background:var(--gr-800)}
 .bg-br50{background:var(--br-50)}
-.eyebrow{display:block;font-family:var(--fd);font-size:1.5rem;font-weight:700;letter-spacing:.04em;line-height:1.15;text-transform:uppercase;color:var(--ye-500);margin-bottom:.875rem}
+.eyebrow{display:block;font-family:var(--fb);font-size:.8125rem;font-weight:700;letter-spacing:.14em;line-height:1.3;text-transform:uppercase;color:var(--ye-700);margin-bottom:.875rem}
+.bg-green .eyebrow,.jf-svc-hero .eyebrow{color:var(--ye-500)}
 .accent-rule{display:block;width:40px;height:3px;background:var(--ye-500);margin-bottom:1.5rem}
 
 /* ── Buttons ─────────────────────────────────────────────── */
@@ -281,7 +282,6 @@ image-slot{border-radius:var(--r);overflow:hidden;display:block}
   .section{padding:56px 0}
   /* Prevent any element from forcing horizontal scroll on phones */
   html,body{overflow-x:hidden}
-  .eyebrow{font-size:1.25rem;letter-spacing:.04em}
   /* Hero: tighter spacing, full-width stacked badges */
   .hero{min-height:auto}
   .hero-content{padding:48px 0}
@@ -399,3 +399,47 @@ image-slot:not([src]){display:none}
 .jf-area--cta p{color:rgba(255,255,255,.78);font-size:.9375rem;line-height:1.6;margin-bottom:auto}
 .jf-area--cta .btn{margin-top:18px}
 @media(max-width:768px){.jf-areas{grid-template-columns:1fr}}
+
+/* ── Buyer pathways (self-identify router) ─────────────────── */
+.jf-paths{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:34px}
+.jf-path{display:flex;align-items:center;gap:13px;background:var(--white);border:1px solid var(--nt-200);border-left:4px solid var(--gr-700);border-radius:var(--r);padding:18px 20px;color:var(--br-800);font-family:var(--fd);font-weight:600;font-size:1.0625rem;line-height:1.2;box-shadow:var(--sh1);transition:transform 180ms ease,box-shadow 180ms ease,border-color 180ms ease}
+.jf-path>svg:first-child{flex-shrink:0;color:var(--gr-700);transition:transform 220ms ease}
+.jf-path .jf-path-arrow{margin-left:auto;flex-shrink:0;color:var(--nt-500);transition:transform 180ms ease}
+.jf-path:hover{transform:translateY(-3px);box-shadow:var(--sh2);border-left-color:var(--ye-500);color:var(--br-800)}
+.jf-path:hover>svg:first-child{transform:scale(1.12)}
+.jf-path:hover .jf-path-arrow{transform:translateX(4px);color:var(--ye-700)}
+.jf-path--urgent{border-color:var(--ye-500);border-left-color:var(--ye-500);background:var(--ye-50)}
+.jf-path--urgent>svg:first-child{color:var(--ye-700)}
+@media(max-width:560px){.jf-paths{grid-template-columns:1fr}}
+
+/* ── Narrow container ──────────────────────────────────────── */
+.jf-container-narrow{max-width:860px}
+
+/* ── What happens when you call (process) ──────────────────── */
+.jf-process{display:grid;grid-template-columns:repeat(auto-fit,minmax(195px,1fr));gap:18px;margin-top:36px;list-style:none;padding:0}
+.jf-step{background:var(--nt-50);border:1px solid var(--nt-200);border-radius:var(--r);padding:26px 22px}
+.jf-step-num{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:999px;background:var(--gr-700);color:#fff;font-family:var(--fd);font-weight:700;font-size:1.375rem;margin-bottom:14px}
+.jf-step h4{font-family:var(--fd);font-size:1.1875rem;font-weight:700;color:var(--br-800);margin-bottom:6px;line-height:1.18}
+.jf-step p{font-size:.9375rem;color:var(--nt-500);line-height:1.55;margin:0}
+
+/* ── Proof section ─────────────────────────────────────────── */
+.jf-proof{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+.jf-proof-card{background:var(--nt-50);border:1px dashed var(--nt-300, #D4C0A0);border-radius:var(--r);padding:24px}
+.jf-proof-tag{display:block;font-family:var(--fd);font-size:1.1875rem;font-weight:700;color:var(--br-800);margin-bottom:8px}
+.jf-proof-card p{font-size:.9375rem;color:var(--nt-500);line-height:1.6;margin:0}
+.jf-proof-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}
+.jf-proof-shot{display:block;position:relative;border-radius:var(--r);overflow:hidden;border:1px solid var(--nt-200);color:#fff}
+.jf-proof-shot img{width:100%;height:210px;object-fit:cover;display:block;transition:transform 450ms ease}
+.jf-proof-shot:hover img{transform:scale(1.05)}
+.jf-proof-shot span{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(42,21,8,.88));font-family:var(--fd);font-weight:600;font-size:.9375rem;padding:30px 14px 12px}
+@media(max-width:768px){.jf-proof,.jf-proof-gallery{grid-template-columns:1fr}}
+
+/* ── Home FAQ ──────────────────────────────────────────────── */
+.jf-faq{display:flex;flex-direction:column;gap:12px;margin-top:32px}
+.jf-faq__item{border:1px solid var(--nt-200);border-radius:var(--r);background:var(--white);overflow:hidden}
+.jf-faq__q{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 22px;font-family:var(--fd);font-weight:600;font-size:1.1875rem;color:var(--br-800);cursor:pointer;list-style:none}
+.jf-faq__q::-webkit-details-marker{display:none}
+.jf-faq__q svg{flex-shrink:0;color:var(--ye-700);transition:transform 200ms ease}
+.jf-faq__item[open] .jf-faq__q svg{transform:rotate(90deg)}
+.jf-faq__a{padding:0 22px 20px;color:var(--nt-500)}
+.jf-faq__a p{margin:0;line-height:1.65}
