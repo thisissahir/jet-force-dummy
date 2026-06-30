@@ -42,7 +42,7 @@ function buildNav(active) {
   return `
 <header id="site-header">
   <div class="container nav-inner">
-    <a href="index.html" class="nav-logo"><img class="nav-logo-mark" src="../assets/jf-mark-white.png" alt="Jet Force Underground Solutions"><span class="nav-logo-wm"><span class="nav-logo-name">JET FORCE</span><span class="nav-logo-tag">Underground Solutions</span></span></a>
+    <a href="index.html" class="nav-logo"><img class="nav-logo-mark" src="../assets/jf-mark-white.png" alt="Jet Force Grease &amp; Pipe Solutions"><span class="nav-logo-wm"><span class="nav-logo-name">JET FORCE</span><span class="nav-logo-mid">Underground</span><span class="nav-logo-sub">Grease &amp; Pipe Solutions</span></span></a>
     <nav class="nav-links">
       <div class="nav-drop">
         <button class="nav-drop-btn">Services ${IC.chevD}</button>
