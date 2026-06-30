@@ -462,3 +462,11 @@ image-slot:not([src]){display:none}
 .jf-faq__item[open] .jf-faq__q svg{transform:rotate(90deg)}
 .jf-faq__a{padding:0 22px 20px;color:var(--nt-500)}
 .jf-faq__a p{margin:0;line-height:1.65}
+
+/* ── Water-service pages: Mineral Teal accent (green -> teal) ─ */
+.jf-water{
+  --gr-800:#103C39;
+  --gr-700:var(--jf-teal);
+  --gr-600:var(--teal-600);
+  --gr-50:var(--teal-50);
+}
