@@ -464,3 +464,18 @@ image-slot:not([src]){display:none}
 .jf-faq__a{padding:0 22px 20px;color:var(--nt-500)}
 .jf-faq__a p{margin:0;line-height:1.65}
 
+
+/* ── Service photo slider ──────────────────────────────────── */
+.jf-slider{position:relative;margin:28px 0;border-radius:var(--r);overflow:hidden;background:var(--jf-concrete);box-shadow:var(--sh2);border:1px solid var(--nt-200)}
+.jf-slides{position:relative;width:100%;aspect-ratio:3/2;background:var(--jf-concrete)}
+.jf-slide{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;opacity:0;transition:opacity .5s ease;pointer-events:none}
+.jf-slide.is-active{opacity:1;pointer-events:auto}
+.jf-slider-btn{position:absolute;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;border:none;background:rgba(19,37,58,.78);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:3;transition:background .15s}
+.jf-slider-btn:hover{background:var(--jf-navy)}
+.jf-prev{left:12px}
+.jf-next{right:12px}
+.jf-dots{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);display:flex;gap:8px;z-index:3}
+.jf-dot{width:9px;height:9px;border-radius:50%;border:none;background:rgba(255,255,255,.65);box-shadow:0 0 0 1px rgba(19,37,58,.25);cursor:pointer;padding:0;transition:background .15s,transform .15s}
+.jf-dot.is-active{background:var(--jf-gold);transform:scale(1.25)}
+.jf-solo{display:block;width:100%;height:auto;border-radius:var(--r);box-shadow:0 16px 44px rgba(19,37,58,.24);border:1px solid var(--nt-200);margin:28px 0}
+@media(max-width:560px){.jf-slides{aspect-ratio:4/3}.jf-slider-btn{width:36px;height:36px}}
