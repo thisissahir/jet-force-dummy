@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jet Force Brand Identity System</title>
+<style>
+@font-face{font-family:BebasNeue;src:url("assets/fonts/bebas-neue-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:Inter;src:url("assets/fonts/inter-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:Inter;src:url("assets/fonts/inter-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:RobotoMono;src:url("assets/fonts/roboto-mono-500.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+
+:root{
+  --green:#1A4D35;
+  --green-dark:#0F3D2E;
+  --charcoal:#1A1F23;
+  --charcoal-dark:#0C1014;
+  --gold:#F5B800;
+  --gold-dark:#B88800;
+  --teal:#145E5A;
+  --concrete:#E6E8EB;
+  --white:#FAFBFC;
+  --steel:#8AA0B0;
+  --ink:#15191D;
+  --muted:#5A6370;
+  --line:rgba(26,31,35,.14);
+  --display:BebasNeue,"Arial Narrow",sans-serif;
+  --body:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+  --mono:RobotoMono,"SFMono-Regular",Consolas,monospace;
+}
+
+*{box-sizing:border-box}
+html{font-size:16px}
+body{margin:0;background:#F6F7F4;color:var(--ink);font-family:var(--body);line-height:1.55}
+.page{max-width:1480px;margin:0 auto;padding:42px 38px 72px}
+.cover{position:relative;overflow:hidden;background:var(--charcoal);color:var(--white);border-radius:12px;padding:58px 58px 64px;min-height:520px;display:grid;grid-template-columns:1fr 420px;gap:56px;align-items:center;box-shadow:0 30px 90px rgba(12,16,20,.18)}
+.cover:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(245,184,0,.16) 0 8px,transparent 8px),repeating-linear-gradient(115deg,transparent 0 80px,rgba(245,184,0,.055) 80px 82px,transparent 82px 160px);pointer-events:none}
+.cover>*{position:relative;z-index:1}
+.kicker{font-family:var(--mono);font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin:0 0 16px}
+h1,h2,h3{font-family:var(--display);font-weight:400;letter-spacing:.01em;text-transform:uppercase;line-height:.95;margin:0}
+h1{font-size:clamp(4.8rem,10vw,9.2rem);max-width:820px}
+h1 span{color:var(--gold)}
+.cover-copy{max-width:740px;margin-top:28px;color:rgba(250,251,252,.78);font-size:1.18rem}
+.cover-meta{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+.pill{font-family:var(--mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;border:1px solid rgba(250,251,252,.2);padding:10px 14px;border-radius:4px;color:var(--white);background:rgba(250,251,252,.06)}
+.hero-mark{align-self:stretch;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--green),var(--teal));border:1px solid rgba(250,251,252,.14);border-radius:10px;padding:42px}
+.hero-mark img{width:min(100%,300px);height:auto;filter:drop-shadow(0 20px 34px rgba(0,0,0,.18))}
+
+.section{margin-top:34px;background:var(--white);border:1px solid var(--line);border-radius:12px;padding:38px;box-shadow:0 16px 50px rgba(12,16,20,.06)}
+.section-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:28px;border-bottom:1px solid var(--line);padding-bottom:22px}
+.label{font-family:var(--mono);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-dark);margin:0 0 8px}
+h2{font-size:clamp(2.8rem,4.8vw,5.2rem);color:var(--charcoal)}
+.section-note{max-width:580px;color:var(--muted);margin:0;font-size:1rem}
+
+.logo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.logo-card{min-height:280px;border-radius:10px;display:flex;flex-direction:column;justify-content:space-between;padding:24px;border:1px solid var(--line);overflow:hidden}
+.bg-charcoal{background:var(--charcoal);color:var(--white)}
+.bg-green{background:var(--green);color:var(--white)}
+.bg-gold{background:var(--gold);color:var(--charcoal)}
+.bg-concrete{background:var(--concrete);color:var(--charcoal)}
+.logo-lockup{display:flex;align-items:center;gap:18px}
+.logo-lockup.stack{flex-direction:column;align-items:flex-start;gap:18px}
+.logo-lockup img{width:96px;height:auto}
+.bg-gold .logo-lockup img,.bg-concrete .logo-lockup img{filter:brightness(0) saturate(100%) invert(9%) sepia(8%) saturate(997%) hue-rotate(169deg) brightness(93%) contrast(90%)}
+.wordmark strong{display:block;font-family:var(--display);font-size:2.45rem;letter-spacing:.025em;line-height:.86}
+.wordmark span{display:block;font-family:var(--body);font-weight:700;font-size:.72rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin-top:8px}
+.bg-gold .wordmark span,.bg-concrete .wordmark span{color:var(--green)}
+.usage{font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;opacity:.72}
+
+.palette{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.swatch{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--white)}
+.chip{height:170px;display:flex;align-items:end;padding:18px;color:var(--white)}
+.chip.light{color:var(--charcoal)}
+.swatch h3{font-size:2rem;margin:0}
+.swatch-body{padding:18px}
+.hex{font-family:var(--mono);font-size:.9rem;color:var(--charcoal);margin-bottom:10px}
+.role{font-size:.9rem;color:var(--muted);margin:0}
+.ramps{display:grid;grid-template-columns:repeat(5,1fr);height:12px;margin-top:16px;border-radius:2px;overflow:hidden}
+
+.type-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:24px;align-items:stretch;min-width:0}
+.type-spec{border:1px solid var(--line);border-radius:10px;padding:30px;background:#FBFCFB;min-width:0;overflow:hidden}
+.display-sample{font-family:var(--display);font-size:clamp(4.2rem,8vw,8rem);line-height:.9;text-transform:uppercase;color:var(--charcoal);margin:0 0 24px;overflow-wrap:anywhere}
+.body-sample{font-size:1.18rem;line-height:1.68;color:var(--muted);max-width:760px}
+.type-row{display:grid;grid-template-columns:130px 1fr;gap:22px;border-top:1px solid var(--line);padding:18px 0}
+.type-row:first-child{border-top:0}
+.type-row .name{font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-dark)}
+.type-row .sample{font-size:1.25rem}
+.type-row .sample.display{font-family:var(--display);font-size:2.6rem;line-height:.92;text-transform:uppercase}
+.type-row .sample.mono{font-family:var(--mono);font-size:1rem;letter-spacing:.06em}
+
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.business-card{width:100%;aspect-ratio:3.5/2;border-radius:14px;position:relative;overflow:hidden;box-shadow:0 28px 70px rgba(12,16,20,.18);padding:34px}
+.card-front{background:var(--charcoal);color:var(--white)}
+.card-front:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--green) 0 16px,transparent 16px),repeating-linear-gradient(115deg,transparent 0 58px,rgba(245,184,0,.07) 58px 60px,transparent 60px 124px)}
+.card-back{background:var(--white);border:1px solid var(--line);color:var(--charcoal)}
+.card-back:before{content:"";position:absolute;left:0;top:0;bottom:0;width:18px;background:var(--green)}
+.card-back:after{content:"";position:absolute;right:0;top:0;bottom:0;width:18px;background:var(--gold)}
+.card-content{position:relative;z-index:1;height:100%;display:flex;flex-direction:column;justify-content:space-between}
+.card-logo{display:flex;align-items:center;gap:18px}
+.card-logo img{width:78px;height:auto}
+.card-logo strong{font-family:var(--display);font-size:2.55rem;line-height:.86;display:block}
+.card-logo span{font-family:var(--body);font-weight:700;color:var(--gold);font-size:.68rem;letter-spacing:.24em;text-transform:uppercase}
+.card-person h3{font-size:2.2rem;color:inherit;margin-bottom:6px}
+.card-person p{font-family:var(--mono);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin:0}
+.card-details{display:grid;gap:8px;font-family:var(--mono);font-size:.8rem;color:var(--muted)}
+.card-details strong{color:var(--charcoal)}
+.card-mark{position:absolute;right:32px;bottom:24px;width:112px;opacity:.1;filter:brightness(0) saturate(100%)}
+.card-front .card-mark{opacity:.12;filter:none}
+
+.rules{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.rule-card{border:1px solid var(--line);border-radius:10px;padding:24px;background:#FBFCFB}
+.rule-card h3{font-size:1.65rem;color:var(--charcoal);margin-bottom:12px}
+.rule-card p{color:var(--muted);margin:0;font-size:.96rem}
+.rule-bar{width:54px;height:5px;background:var(--gold);margin-bottom:18px}
+
+@media(max-width:1100px){
+  .cover{grid-template-columns:1fr}
+  .hero-mark{min-height:300px}
+  .logo-grid,.palette{grid-template-columns:repeat(2,1fr)}
+  .type-grid,.cards,.rules{grid-template-columns:1fr}
+}
+@media(max-width:680px){
+  .page{padding:18px}
+  .cover,.section{padding:28px;border-radius:8px}
+  h1{font-size:clamp(3.1rem,15vw,4rem)}
+  .logo-grid,.palette{grid-template-columns:1fr}
+  .section-head{display:block}
+  .business-card{padding:24px}
+  .logo-lockup{gap:14px}
+  .logo-lockup img{width:72px}
+  .wordmark strong{font-size:2rem}
+  .wordmark span{font-size:.62rem;letter-spacing:.18em}
+  .type-row{grid-template-columns:1fr;gap:8px}
+  .card-logo{gap:12px}
+  .card-logo img{width:58px}
+  .card-logo strong{font-size:1.9rem}
+  .card-logo span{font-size:.56rem;letter-spacing:.16em}
+  .card-person h3{font-size:1.65rem}
+  .card-details{font-size:.68rem}
+}
+
+@media print{
+  body{background:white}
+  .page{max-width:none;padding:0}
+  .cover,.section{break-inside:avoid;box-shadow:none;border-radius:0;margin:0 0 20px}
+}
+</style>
+</head>
+<body>
+<main class="page">
+  <section class="cover">
+    <div>
+      <p class="kicker">Brand Identity System / V1</p>
+      <h1>Jet Force <span>Grease &amp; Pipe</span> Solutions</h1>
+      <p class="cover-copy">A rugged, high-trust identity for Denver underground infrastructure work: sewer, drain, grease, water line, leak detection, and emergency response under one operational brand.</p>
+      <div class="cover-meta">
+        <span class="pill">Denver Metro</span>
+        <span class="pill">Underground Services</span>
+        <span class="pill">Honest Diagnosis First</span>
+      </div>
+    </div>
+    <div class="hero-mark">
+      <img src="assets/jf-mark-white-wm.png" alt="Jet Force JF mark">
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <div>
+        <p class="label">01 / Logo System</p>
+        <h2>Approved Lockups</h2>
+      </div>
+      <p class="section-note">Use the JF skyline and pipe mark with the wordmark lockup. Keep the mark high-contrast and avoid low-contrast photo placement.</p>
+    </div>
+    <div class="logo-grid">
+      <div class="logo-card bg-charcoal">
+        <div class="logo-lockup">
+          <img src="assets/jf-mark-white-wm.png" alt="">
+          <div class="wordmark"><strong>Jet Force</strong><span>Underground</span></div>
+        </div>
+        <div class="usage">Primary / Iron Charcoal</div>
+      </div>
+      <div class="logo-card bg-green">
+        <div class="logo-lockup">
+          <img src="assets/jf-mark-white-wm.png" alt="">
+          <div class="wordmark"><strong>Jet Force</strong><span>Grease &amp; Pipe</span></div>
+        </div>
+        <div class="usage">Primary / Pipe Green</div>
+      </div>
+      <div class="logo-card bg-gold">
+        <div class="logo-lockup stack">
+          <img src="assets/jf-mark-white-wm.png" alt="">
+          <div class="wordmark"><strong>Jet Force</strong><span>Emergency Service</span></div>
+        </div>
+        <div class="usage">Dark Mark / Utility Gold</div>
+      </div>
+      <div class="logo-card bg-concrete">
+        <div class="logo-lockup stack">
+          <img src="assets/jf-mark-white-wm.png" alt="">
+          <div class="wordmark"><strong>Jet Force</strong><span>Denver Metro</span></div>
+        </div>
+        <div class="usage">Dark Mark / Concrete</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <div>
+        <p class="label">02 / Color</p>
+        <h2>Color Palette</h2>
+      </div>
+      <p class="section-note">Green owns the underground service category. Charcoal adds authority. Gold is reserved for action, emergency, badges, and high-signal accents.</p>
+    </div>
+    <div class="palette">
+      <div class="swatch">
+        <div class="chip" style="background:var(--green)"><h3>Pipe Green</h3></div>
+        <div class="swatch-body"><div class="hex">#1A4D35</div><p class="role">Primary identity, headers, dark sections, logo ownership.</p><div class="ramps"><span style="background:#0F3D2E"></span><span style="background:#1A4D35"></span><span style="background:#2E6B4A"></span><span style="background:#8DD3AF"></span><span style="background:#E0F4EA"></span></div></div>
+      </div>
+      <div class="swatch">
+        <div class="chip" style="background:var(--charcoal)"><h3>Iron Charcoal</h3></div>
+        <div class="swatch-body"><div class="hex">#1A1F23</div><p class="role">Navigation, footer, hero, premium dark anchor.</p><div class="ramps"><span style="background:#0C1014"></span><span style="background:#1A1F23"></span><span style="background:#2A3038"></span><span style="background:#8AA0B0"></span><span style="background:#EEF2F4"></span></div></div>
+      </div>
+      <div class="swatch">
+        <div class="chip light" style="background:var(--gold)"><h3>Utility Gold</h3></div>
+        <div class="swatch-body"><div class="hex">#F5B800</div><p class="role">CTA, emergency, accent rules, badges, brand signal.</p><div class="ramps"><span style="background:#735900"></span><span style="background:#B88800"></span><span style="background:#F5B800"></span><span style="background:#FAD860"></span><span style="background:#FFF5C8"></span></div></div>
+      </div>
+      <div class="swatch">
+        <div class="chip" style="background:var(--teal)"><h3>Mineral Teal</h3></div>
+        <div class="swatch-body"><div class="hex">#145E5A</div><p class="role">Water services, support accents, secondary depth.</p><div class="ramps"><span style="background:#0B3735"></span><span style="background:#145E5A"></span><span style="background:#237B76"></span><span style="background:#88C8C3"></span><span style="background:#D6EEEC"></span></div></div>
+      </div>
+      <div class="swatch">
+        <div class="chip light" style="background:var(--concrete)"><h3>Concrete</h3></div>
+        <div class="swatch-body"><div class="hex">#E6E8EB</div><p class="role">Neutral backgrounds, dividers, page breathing room.</p><div class="ramps"><span style="background:#AAB2B8"></span><span style="background:#C8CDD2"></span><span style="background:#E6E8EB"></span><span style="background:#F1F3F4"></span><span style="background:#FAFBFC"></span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <div>
+        <p class="label">03 / Typography</p>
+        <h2>Font System</h2>
+      </div>
+      <p class="section-note">Compressed display type creates utility-truck authority. Inter keeps body copy clear. Roboto Mono is reserved for operational details.</p>
+    </div>
+    <div class="type-grid">
+      <div class="type-spec">
+        <p class="display-sample">Everything Underground. One Call.</p>
+        <p class="body-sample">Jet Force uses a direct, high-trust voice: clear diagnosis first, no pressure, no vague surprises, and emergency support when underground problems cannot wait.</p>
+      </div>
+      <div class="type-spec">
+        <div class="type-row"><div class="name">Display</div><div class="sample display">Bebas Neue</div></div>
+        <div class="type-row"><div class="name">Body</div><div class="sample">Inter Regular / Bold</div></div>
+        <div class="type-row"><div class="name">Utility</div><div class="sample mono">Roboto Mono 500</div></div>
+        <div class="type-row"><div class="name">Usage</div><div class="sample">Large headlines, dense body copy, CTAs, service cards, operational labels.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <div>
+        <p class="label">04 / Business Cards</p>
+        <h2>Business Card System</h2>
+      </div>
+      <p class="section-note">Cards use the same industrial hierarchy: dark brand front, clean service/contact back, gold for action and emergency recall.</p>
+    </div>
+    <div class="cards">
+      <div class="business-card card-front">
+        <img class="card-mark" src="assets/jf-mark-white-wm.png" alt="">
+        <div class="card-content">
+          <div class="card-logo">
+            <img src="assets/jf-mark-white-wm.png" alt="">
+            <div><strong>Jet Force</strong><span>Grease &amp; Pipe Solutions</span></div>
+          </div>
+          <div class="card-person">
+            <h3>Michael Martinez</h3>
+            <p>Owner / Underground Services</p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card card-back">
+        <img class="card-mark" src="assets/jf-mark-white-wm.png" alt="">
+        <div class="card-content">
+          <div>
+            <p class="label">Denver Metro Underground Experts</p>
+            <h3 style="font-size:3rem;color:var(--charcoal)">Clear Diagnosis First.</h3>
+          </div>
+          <div class="card-details">
+            <div><strong>Phone</strong> / (555) 555-5555</div>
+            <div><strong>Email</strong> / service@jetforcedenver.com</div>
+            <div><strong>Web</strong> / jetforcedenver.com</div>
+            <div><strong>Services</strong> / Grease, sewer, drain, water line, leak detection</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+</body>
+</html>
