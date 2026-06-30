@@ -6,26 +6,32 @@
 
 /* ── Tokens ──────────────────────────────────────────────── */
 :root {
-  /* Color System V3 — Pipe Green / Iron Charcoal / Utility Gold / Concrete / Mineral Teal */
+  /* ── Color System V3 — canonical brand tokens (source of truth) ── */
+  --jf-green:    #1A4D35;   /* Pipe Green — primary brand */
+  --jf-charcoal: #1A1F23;   /* Iron Charcoal — dark anchor */
+  --jf-gold:     #F5B800;   /* Utility Gold — CTA / accent */
+  --jf-teal:     #145E5A;   /* Mineral Teal — water services only */
+  --jf-concrete: #E6E8EB;   /* Concrete — section backgrounds */
+  --jf-white:    #FAFBFC;   /* Clean White — cards / forms */
 
-  /* Iron Charcoal — dark anchor: navbar, footer, hero bg, dark chrome (mapped to --br-*) */
-  --br-950:#14181B; --br-900:#1A1F23; --br-800:#232B30;
+  /* Iron Charcoal scale — navbar, footer, hero bg, dark chrome (--br-*) */
+  --br-950:#14181B; --br-900:var(--jf-charcoal); --br-800:#232B30;
   --br-700:#2F383E; --br-600:#3D474E; --br-400:#6E7980;
   --br-100:#C9CFD3; --br-50:#EEF0F2;
 
-  /* Pipe Green — primary: headers, logo, dark sections (mapped to --gr-*) */
-  --gr-800:#143D2A; --gr-700:#1A4D35; --gr-600:#236B49; --gr-50:#E7F0EB;
+  /* Pipe Green scale — headers, logo, dark sections (--gr-*) */
+  --gr-800:#143D2A; --gr-700:var(--jf-green); --gr-600:#236B49; --gr-50:#E7F0EB;
 
-  /* Utility Gold — CTA, buttons, accent rules, badges (mapped to --ye-*) */
-  --ye-700:#C28F00; --ye-500:#F5B800; --ye-300:#FBD45E; --ye-50:#FFF6DC;
+  /* Utility Gold scale — CTA, buttons, accent rules, badges (--ye-*) */
+  --ye-700:#C28F00; --ye-500:var(--jf-gold); --ye-300:#FBD45E; --ye-50:#FFF6DC;
 
-  /* Concrete + cool neutrals — backgrounds, dividers, text (mapped to --nt-*) */
+  /* Concrete + cool neutrals — backgrounds, dividers, text (--nt-*) */
   --nt-900:#1F262B; --nt-700:#3A454C; --nt-500:#5C6970;
-  --nt-200:#CFD5D9; --nt-100:#E6E8EB; --nt-50:#F4F6F7;
-  --white:#FFFFFF;
+  --nt-200:#CFD5D9; --nt-100:var(--jf-concrete); --nt-50:#F4F6F7;
+  --white:var(--jf-white);
 
   /* Mineral Teal — supporting accent, water-related pages only */
-  --teal-700:#145E5A; --teal-600:#1A7771; --teal-50:#E3F0EF;
+  --teal-700:var(--jf-teal); --teal-600:#1A7771; --teal-50:#E3F0EF;
 
   --fd:'Barlow Condensed','Arial Narrow',sans-serif;
   --fb:'Barlow',Arial,sans-serif;
