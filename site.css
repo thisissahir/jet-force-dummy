@@ -344,19 +344,22 @@ image-slot:not([src]){display:none}
 .img-2:not(:has(image-slot[src])){display:none}
 .img-wide:not(:has(image-slot[src])){display:none}
 
-/* Home hero banner photo with brand overlay (darker left for legibility). */
+/* Home hero banner photo: JF truck + Denver skyline. Dark left for copy
+   legibility, lighter right so the truck branding reads. */
 .hero--photo{
-  background:linear-gradient(90deg, rgba(19,37,58,.94) 0%, rgba(19,37,58,.80) 45%, rgba(19,37,58,.50) 100%), url('assets/photos/home-banner.jpg');
+  background:linear-gradient(90deg, rgba(16,29,49,.93) 0%, rgba(16,29,49,.85) 30%, rgba(16,29,49,.60) 55%, rgba(16,29,49,.30) 80%, rgba(16,29,49,.18) 100%), url('assets/photos/home-banner.jpg');
   background-size:cover;
-  background-position:center;
+  background-position:50% 40%;
   background-repeat:no-repeat;
 }
+.hero--photo .hero-content{max-width:660px}
 @media (max-width:760px){
   .hero--photo{
-    background:linear-gradient(rgba(19,37,58,.84), rgba(19,37,58,.88)), url('assets/photos/home-banner.jpg');
+    background:linear-gradient(rgba(16,29,49,.82), rgba(16,29,49,.90)), url('assets/photos/home-banner.jpg');
     background-size:cover;
-    background-position:center;
+    background-position:55% center;
   }
+  .hero--photo .hero-content{max-width:none}
 }
 
 /* ── Hero emblem: JF mark, soft halo, glossy sheen sweep (homepage right) ── */
