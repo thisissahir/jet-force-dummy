@@ -93,8 +93,9 @@ h4{font-family:var(--fb);font-size:1.0625rem;font-weight:600;color:var(--nt-900)
 .nav-logo{flex-shrink:0;margin-right:32px;display:flex;align-items:center;gap:11px}
 .nav-logo-mark{height:46px;width:auto;display:block}
 .nav-logo-wm{display:flex;flex-direction:column;line-height:1}
-.nav-logo-name{font-family:var(--fd);font-size:1.55rem;font-weight:700;color:#fff;letter-spacing:.02em}
-.nav-logo-sub{font-family:var(--fb);font-size:.5rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--ye-500);margin-top:3px}
+.nav-logo-name{font-family:var(--fd);font-size:1.4rem;font-weight:700;color:#fff;letter-spacing:.02em}
+.nav-logo-mid{font-family:var(--fb);font-size:.72rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--ye-500);line-height:1;margin-top:2px}
+.nav-logo-sub{font-family:var(--fb);font-size:.46rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-top:2px}
 .foot-logo-lockup{display:flex;align-items:center;gap:11px;margin-bottom:18px}
 .foot-logo-lockup .nav-logo-mark{height:48px}
 .nav-links{display:flex;align-items:center;flex:1}
