@@ -996,8 +996,8 @@ h4{font-size:1.15rem}
 .sb-body{padding:30px}
 .f-input{font-size:1rem;padding:15px 16px}
 .jf-slider,.jf-solo{border-radius:8px;box-shadow:0 22px 60px rgba(26,31,35,.16)}
-.jf-slides{aspect-ratio:16/10}
-.jf-slide{object-fit:cover}
+.jf-slides{aspect-ratio:4/3}
+.jf-slide{object-fit:contain}
 
 #site-footer{background:var(--jf-charcoal-d)}
 .foot-grid{padding:82px 0 60px}
