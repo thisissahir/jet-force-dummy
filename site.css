@@ -16,12 +16,12 @@
 /* ── Tokens ──────────────────────────────────────────────── */
 :root {
   /* ── Jet Force brand palette (precise) ── */
-  --jf-green:    #1D6B43;   /* Pipe Green — primary brand */
-  --jf-navy:     #13253A;   /* Midnight Navy — dark anchor */
+  --jf-green:    #1D6FA3;   /* Pipe Blue — primary brand */
+  --jf-navy:     #0E1B33;   /* Midnight Navy — dark anchor */
   --jf-steel:    #6B737B;   /* Steel Gray — secondary text */
   --jf-concrete: #F2F3F1;   /* Concrete — section backgrounds */
-  --jf-sage:     #A7B7A1;   /* Sage — soft accent */
-  --jf-gold:     #FFC107;   /* Safety Gold — CTA / accent */
+  --jf-sage:     #A3B6C7;   /* Mist Blue — soft accent */
+  --jf-gold:     #2E96CE;   /* Water Blue — CTA / accent */
   --jf-white:    #FFFFFF;   /* cards / forms */
 
   /* Midnight Navy scale — navbar, footer, hero bg, dark chrome (--br-*) */
@@ -30,10 +30,10 @@
   --br-100:#C4CCD6; --br-50:#EDF0F4;
 
   /* Pipe Green scale — headers, logo, dark sections (--gr-*) */
-  --gr-800:#14502F; --gr-700:var(--jf-green); --gr-600:#2A8455; --gr-50:#E7F1EB;
+  --gr-800:#14507A; --gr-700:var(--jf-green); --gr-600:#2A84B8; --gr-50:#E7EEF4;
 
   /* Safety Gold scale — CTA, buttons, accent rules, badges (--ye-*) */
-  --ye-700:#C99400; --ye-500:var(--jf-gold); --ye-300:#FFD75E; --ye-50:#FFF8E1;
+  --ye-700:#15628F; --ye-500:var(--jf-gold); --ye-300:#7CC3E8; --ye-50:#E9F4FB;
 
   /* Concrete + Steel neutrals — backgrounds, dividers, text (--nt-*) */
   --nt-900:#1E2933; --nt-700:#3C4955; --nt-500:var(--jf-steel);
@@ -41,7 +41,7 @@
   --white:var(--jf-white);
 
   /* Sage — soft supporting accent */
-  --sage-500:var(--jf-sage); --sage-50:#EAF0E8;
+  --sage-500:var(--jf-sage); --sage-50:#EAF0F5;
 
   --fd:'Bebas Neue','Arial Narrow',sans-serif;
   --fb:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;
@@ -86,7 +86,7 @@ h4{font-family:var(--fb);font-size:1.0625rem;font-weight:600;color:var(--nt-900)
 /* ── Buttons ─────────────────────────────────────────────── */
 .btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--fb);font-size:.8125rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:14px 30px;border-radius:var(--r);border:none;cursor:pointer;white-space:nowrap;transition:background 150ms,transform 150ms,box-shadow 150ms,border-color 150ms,color 150ms}
 .btn:active{transform:scale(.97)}
-.btn-primary{background:var(--ye-500);color:var(--br-950);box-shadow:0 4px 14px rgba(255,193,7,.28)}
+.btn-primary{background:var(--ye-500);color:var(--br-950);box-shadow:0 4px 14px rgba(46,150,206,.28)}
 .btn-primary:hover{background:var(--ye-700);transform:translateY(-1px);color:var(--br-950)}
 .btn-ghost-white{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.3);font-family:var(--fm);font-weight:500}
 .btn-ghost-white:hover{border-color:rgba(255,255,255,.7);background:rgba(255,255,255,.06)}
@@ -308,8 +308,8 @@ image-slot{border-radius:var(--r);overflow:hidden;display:block}
   display:flex;
   align-items:center;
   justify-content:center;
-  background:rgba(12,16,20,.44);
-  border:1px solid rgba(250,251,252,.16);
+  background:var(--white);
+  border:1px solid var(--nt-200);
   border-radius:8px;
   box-shadow:0 28px 80px rgba(12,16,20,.22);
 }
@@ -338,14 +338,14 @@ image-slot{border-radius:var(--r);overflow:hidden;display:block}
 .ci-card h3{color:#fff;font-size:1.25rem;margin-bottom:20px}
 .ci-row{display:flex;gap:14px;margin-bottom:18px;align-items:flex-start}
 .ci-row:last-child{margin-bottom:0}
-.ci-ico{width:36px;height:36px;border-radius:3px;background:rgba(255,193,7,.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--ye-500)}
+.ci-ico{width:36px;height:36px;border-radius:3px;background:rgba(46,150,206,.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--ye-500)}
 .ci-main{font-family:var(--fm);font-size:.875rem;font-weight:500;color:#fff}
 .ci-sub{font-size:.75rem;color:rgba(255,255,255,.4);margin-top:2px}
 .ct-card{background:var(--nt-50);border:1px solid var(--nt-200);border-radius:var(--r);padding:20px 24px}
 .ct-row{display:flex;align-items:flex-start;gap:10px;margin-bottom:12px}
 .ct-row:last-child{margin-bottom:0}
 .ct-row svg{flex-shrink:0;margin-top:2px;color:var(--ye-700)}
-.form-success{background:#EBF7EE;border:1.5px solid #5A9652;border-radius:var(--r);padding:32px;text-align:center}
+.form-success{background:#EBF7EE;border:1.5px solid #4A9BC9;border-radius:var(--r);padding:32px;text-align:center}
 .form-success h3{color:var(--gr-800);font-size:1.5rem;margin-bottom:8px}
 .form-success p{color:#3D6B3A;font-size:.9375rem}
 
@@ -437,7 +437,7 @@ image-slot:not([src]){display:none}
 .hero--photo::after{display:none} /* emblem replaces the corner watermark */
 .hero-emblem{position:relative;z-index:1;justify-self:center;width:100%;max-width:430px}
 .jf-emblem{position:relative;width:100%;aspect-ratio:1/1;margin:0 auto;display:flex;align-items:center;justify-content:center}
-.jf-halo{position:absolute;top:50%;left:50%;width:100%;height:100%;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,rgba(212,168,32,.42),rgba(46,99,41,.26) 46%,transparent 70%);filter:blur(44px);opacity:.5;animation:jfHalo 7s ease-in-out infinite;will-change:transform,opacity}
+.jf-halo{position:absolute;top:50%;left:50%;width:100%;height:100%;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,rgba(46,150,206,.42),rgba(21,98,143,.26) 46%,transparent 70%);filter:blur(44px);opacity:.5;animation:jfHalo 7s ease-in-out infinite;will-change:transform,opacity}
 .jf-mark{position:relative;width:84%;height:84%;animation:jfBob 7s ease-in-out infinite;will-change:transform}
 .jf-mark img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 14px 30px rgba(0,0,0,.45))}
 .jf-sheen{position:absolute;inset:0;pointer-events:none;mix-blend-mode:screen;background-image:linear-gradient(100deg,transparent 40%,rgba(255,255,255,.9) 50%,transparent 60%);background-size:220% 100%;background-repeat:no-repeat;background-position:165% 0;-webkit-mask:url('assets/jf-mark-white.png') center/contain no-repeat;mask:url('assets/jf-mark-white.png') center/contain no-repeat;animation:jfSweep 7s ease-in-out infinite}
@@ -503,7 +503,7 @@ image-slot:not([src]){display:none}
 
 /* ── Services hero band ────────────────────────────────────── */
 .jf-svc-hero{background:var(--gr-800);text-align:center;padding:76px 0 68px}
-.jf-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,193,7,.14);border:1px solid var(--ye-500);color:var(--ye-500);font-family:var(--fb);font-size:.8125rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:9px 20px;border-radius:999px;margin-bottom:22px}
+.jf-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(46,150,206,.14);border:1px solid var(--ye-500);color:var(--ye-500);font-family:var(--fb);font-size:.8125rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:9px 20px;border-radius:999px;margin-bottom:22px}
 .jf-badge svg{color:var(--ye-500)}
 .jf-svc-title{color:var(--ye-500);font-weight:800;font-size:clamp(2rem,4.6vw,3.25rem);line-height:1.08;max-width:760px;margin:0 auto 18px}
 .jf-svc-sub{color:rgba(255,255,255,.78);max-width:600px;margin:0 auto;font-size:1.125rem;line-height:1.7}
@@ -635,12 +635,12 @@ image-slot:not([src]){display:none}
 .jf-why2-cta-wrap{grid-column:2 / -1;display:flex;flex-direction:column;align-items:center;justify-content:center}
 .jf-why2-card{position:relative;background:var(--white);border:1px solid var(--nt-200);border-radius:6px;padding:28px 24px;box-shadow:var(--sh1);transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;overflow:hidden}
 .jf-why2-card::before{content:"";position:absolute;top:0;left:0;width:100%;height:3px}
-.jf-why2-card--gold::before{background:#ECD880}
+.jf-why2-card--gold::before{background:#A8D4EE}
 .jf-why2-card--navy::before{background:var(--br-900)}
 .jf-why2-card:hover{transform:translateY(-4px);box-shadow:var(--sh2);border-color:var(--ye-300)}
 .jf-why2-chip{width:54px;height:54px;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:18px}
 .jf-why2-chip svg{width:26px;height:26px}
-.jf-why2-card--gold .jf-why2-chip{background:rgba(212,168,32,.16);border:1px solid rgba(212,168,32,.4);color:var(--ye-700)}
+.jf-why2-card--gold .jf-why2-chip{background:rgba(46,150,206,.16);border:1px solid rgba(46,150,206,.4);color:var(--ye-700)}
 .jf-why2-card--navy .jf-why2-chip{background:rgba(19,37,58,.10);border:1px solid rgba(19,37,58,.28);color:var(--br-900)}
 .jf-why2-card h3{font-family:var(--fd);font-weight:700;font-size:1.3125rem;letter-spacing:.02em;text-transform:uppercase;color:var(--br-900);line-height:1.1;margin:0 0 8px}
 .jf-why2-card p{margin:0;font-size:.90625rem;line-height:1.55;color:var(--nt-500)}
@@ -648,7 +648,7 @@ image-slot:not([src]){display:none}
 .jf-why2-cta{position:relative;overflow:hidden;display:inline-flex;align-items:center;gap:12px;background:var(--br-900);color:#fff;font-family:var(--fb);font-weight:700;font-size:1rem;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;padding:18px 40px;border-radius:4px;box-shadow:0 8px 22px rgba(19,37,58,.22);transition:transform .2s ease,background .2s ease,box-shadow .2s ease}
 .jf-why2-cta svg{width:19px;height:19px}
 .jf-why2-cta:hover{background:#0A1730;transform:translateY(-2px);box-shadow:0 14px 34px rgba(19,37,58,.32)}
-.jf-why2-cta::after{content:"";position:absolute;top:0;left:-120%;width:60%;height:100%;background:linear-gradient(100deg,transparent,rgba(236,216,128,.5),transparent);transform:skewX(-18deg);animation:jfShine 5s ease-in-out infinite}
+.jf-why2-cta::after{content:"";position:absolute;top:0;left:-120%;width:60%;height:100%;background:linear-gradient(100deg,transparent,rgba(168,212,238,.5),transparent);transform:skewX(-18deg);animation:jfShine 5s ease-in-out infinite}
 @keyframes jfShine{0%,62%{left:-120%}100%{left:160%}}
 .jf-why2-fine{margin-top:16px;font-family:'Roboto Mono',ui-monospace,monospace;font-size:.8125rem;letter-spacing:.04em;color:var(--nt-500)}
 @media(max-width:900px){
@@ -690,7 +690,7 @@ image-slot:not([src]){display:none}
 .jf-help-head h2{margin:0;text-align:center;white-space:nowrap;text-transform:uppercase;letter-spacing:.03em}
 .jf-help-dash{height:2px;width:clamp(28px,7vw,92px);flex-shrink:1;border-radius:2px}
 .jf-help-dash--l{background:linear-gradient(90deg,transparent,var(--ye-500))}
-.jf-help-dash--r{background:linear-gradient(90deg,#2E6329,transparent)}
+.jf-help-dash--r{background:linear-gradient(90deg,#15628F,transparent)}
 .jf-help-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
 .jf-help-tile{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:14px;text-align:center;padding:26px 12px;background:var(--white);border:1px solid var(--nt-200);border-radius:14px;box-shadow:var(--sh1);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
 .jf-help-tile:hover{transform:translateY(-4px);box-shadow:var(--sh2);border-color:var(--ye-300)}
@@ -720,18 +720,18 @@ image-slot:not([src]){display:none}
    Jet Force rebuild layer - approved V3 palette + larger brand
    ============================================================ */
 :root {
-  --jf-green:#1A4D35;
-  --jf-green-d:#0F3D2E;
-  --jf-green-l:#2E6B4A;
+  --jf-green:#1D6FA3;
+  --jf-green-d:#14507A;
+  --jf-green-l:#2A84B8;
   --jf-green-100:#8DD3AF;
-  --jf-green-50:#E0F4EA;
+  --jf-green-50:#E7EEF4;
   --jf-charcoal:#1A1F23;
   --jf-charcoal-d:#0C1014;
   --jf-charcoal-l:#2A3038;
   --jf-steel:#8AA0B0;
-  --jf-gold:#F5B800;
-  --jf-gold-d:#B88800;
-  --jf-gold-l:#FAD860;
+  --jf-gold:#2E96CE;
+  --jf-gold-d:#15628F;
+  --jf-gold-l:#7CC3E8;
   --jf-teal:#145E5A;
   --jf-concrete:#E6E8EB;
   --jf-white:#FAFBFC;
@@ -745,16 +745,16 @@ image-slot:not([src]){display:none}
   --br-100:#CBD4DA;
   --br-50:#EEF2F4;
 
-  --gr-800:#0F3D2E;
-  --gr-700:#1A4D35;
-  --gr-600:#2E6B4A;
-  --gr-50:#E0F4EA;
+  --gr-800:#14507A;
+  --gr-700:#1D6FA3;
+  --gr-600:#2A84B8;
+  --gr-50:#E7EEF4;
 
-  --ye-700:#B88800;
-  --ye-500:#F5B800;
-  --ye-300:#FAD860;
+  --ye-700:#15628F;
+  --ye-500:#2E96CE;
+  --ye-300:#7CC3E8;
   --ye-200:#F6E39A;
-  --ye-50:#FFF5C8;
+  --ye-50:#E9F4FB;
 
   --nt-900:#1A1F23;
   --nt-700:#3F4B53;
