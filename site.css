@@ -1248,3 +1248,52 @@ h4{font-size:1.15rem}
   }
   .foot-grid{grid-template-columns:1fr;gap:32px}
 }
+
+/* ═══════════════════════════════════════════════════════════
+   LIGHT THEME: navy chrome -> white, text -> navy (green/gold kept)
+   ═══════════════════════════════════════════════════════════ */
+#site-header{background:#fff;border-bottom:1px solid var(--nt-200);box-shadow:0 1px 2px rgba(19,37,58,.06)}
+#site-header.scrolled{background:rgba(255,255,255,.97);box-shadow:0 2px 16px rgba(19,37,58,.12)}
+.nav-logo-name{color:var(--br-900)}
+.nav-logo-sub{color:rgba(19,37,58,.55)}
+.nav-link,.nav-drop-btn{color:var(--br-900)}
+.nav-link:hover,.nav-link.active,.nav-drop:hover .nav-drop-btn{color:var(--gr-700)}
+.nav-phone{color:var(--gr-700)}
+.nav-phone:hover{color:var(--ye-700)}
+.nav-ham span{background:var(--br-900)}
+.nav-drop-menu{background:#fff;border:1px solid var(--nt-200);border-top:2px solid var(--ye-500);box-shadow:0 12px 32px rgba(19,37,58,.14)}
+.nav-drop-menu a{color:rgba(19,37,58,.72);border-bottom:1px solid var(--nt-200)}
+.nav-drop-menu a:hover{color:var(--gr-700);background:var(--nt-50)}
+.mob-nav{background:#fff;border-top:1px solid var(--nt-200);box-shadow:0 8px 24px rgba(19,37,58,.12)}
+.mob-nav a{color:var(--br-900)}
+.mob-nav a.indent{color:rgba(19,37,58,.6)}
+.mob-sec{color:rgba(19,37,58,.42)}
+.svc-section{background:var(--nt-50);border-top:1px solid var(--nt-200);border-bottom:1px solid var(--nt-200)}
+.svc-head h2,.svc-name{color:var(--br-900)}
+.svc-desc{color:rgba(19,37,58,.6)}
+#site-footer{background:#fff;border-top:1px solid var(--nt-200)}
+#site-footer .foot-about{color:rgba(19,37,58,.7)}
+#site-footer .foot-link{color:rgba(19,37,58,.62)}
+#site-footer .foot-link:hover{color:var(--gr-700)}
+#site-footer .foot-col-title{color:rgba(19,37,58,.5)}
+#site-footer .foot-copy{color:rgba(19,37,58,.45)}
+#site-footer .foot-copy svg{color:var(--gr-700)}
+#site-footer .foot-info,#site-footer .foot-info a{color:var(--br-900)}
+.foot-logo-lockup .nav-logo-name{color:var(--br-900)}
+.foot-logo-lockup .nav-logo-sub{color:rgba(19,37,58,.55)}
+.hero--photo{background:linear-gradient(90deg, rgba(255,255,255,.95) 0%, rgba(255,255,255,.9) 34%, rgba(255,255,255,.72) 56%, rgba(255,255,255,.34) 80%, rgba(255,255,255,.1) 100%), url('assets/photos/home-banner.jpg');background-size:cover;background-position:50% 40%}
+.hero h1{color:var(--br-900)}
+.hero-sub{color:rgba(19,37,58,.72)}
+.hero-trustline{color:rgba(19,37,58,.6)}
+.hero-trust-item{color:var(--br-900);background:rgba(19,37,58,.05);border:1px solid rgba(19,37,58,.14)}
+.hero-btns .btn-ghost-white{color:var(--br-900);border-color:rgba(19,37,58,.3)}
+.hero-btns .btn-ghost-white:hover{border-color:var(--br-900);background:rgba(19,37,58,.05)}
+.page-hero{background:var(--nt-50);border-bottom:1px solid var(--nt-200)}
+.page-hero h1{color:var(--br-900)}
+.page-hero .hero-desc{color:rgba(19,37,58,.68)}
+.breadcrumb{color:rgba(19,37,58,.5)}
+.breadcrumb a{color:rgba(19,37,58,.62)}
+.breadcrumb a:hover{color:var(--gr-700)}
+@media (max-width:760px){
+  .hero--photo{background:linear-gradient(rgba(255,255,255,.92), rgba(255,255,255,.82)), url('assets/photos/home-banner.jpg');background-size:cover;background-position:55% center}
+}

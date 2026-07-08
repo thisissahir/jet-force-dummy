@@ -42,7 +42,7 @@ function buildNav(active) {
   return `
 <header id="site-header">
   <div class="container nav-inner">
-    <a href="index.html" class="nav-logo"><img class="nav-logo-mark" src="assets/jf-mark-white-wm.png" alt="Jet Force Grease &amp; Pipe Solutions"><span class="nav-logo-wm"><span class="nav-logo-name">JET FORCE</span><span class="nav-logo-mid">Underground</span><span class="nav-logo-sub">Grease &amp; Pipe Solutions</span></span></a>
+    <a href="index.html" class="nav-logo"><img class="nav-logo-mark" src="assets/jf-mark-navy-wm.png" alt="Jet Force Grease &amp; Pipe Solutions"><span class="nav-logo-wm"><span class="nav-logo-name">JET FORCE</span><span class="nav-logo-mid">Underground</span><span class="nav-logo-sub">Grease &amp; Pipe Solutions</span></span></a>
     <nav class="nav-links">
       <div class="nav-drop">
         <button class="nav-drop-btn">Services ${IC.chevD}</button>
@@ -88,7 +88,7 @@ function buildFooter() {
     <div class="foot-grid">
       <div>
         <div class="foot-logo-lockup">
-          <img class="nav-logo-mark" src="assets/jf-mark-white-wm.png" alt="Jet Force Grease &amp; Pipe Solutions">
+          <img class="nav-logo-mark" src="assets/jf-mark-navy-wm.png" alt="Jet Force Grease &amp; Pipe Solutions">
           <span class="nav-logo-wm"><span class="nav-logo-name">JET FORCE</span><span class="nav-logo-mid">Underground</span><span class="nav-logo-sub">Grease &amp; Pipe Solutions</span></span>
         </div>
         <p class="foot-about">Denver's underground specialists — sewer line jetting, sewer and water line repair, grease traps, leak detection, and more. One call handles it all. No down payment required.</p>
