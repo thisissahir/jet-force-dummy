@@ -871,7 +871,7 @@ h4{font-size:1.15rem}
   border-color:rgba(250,251,252,.18);
   background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,0));
 }
-.trust-ico{width:72px;height:72px;border-radius:8px;background:rgba(250,251,252,.13)!important;color:var(--jf-gold)!important}
+.trust-ico{width:72px;height:72px;border-radius:8px;background:rgba(255,255,255,.94)!important;color:var(--br-900)!important}
 .trust-val{font-size:3rem;color:var(--jf-white)}
 .trust-lbl{font-size:1.05rem;color:rgba(250,251,252,.72)}
 
