@@ -284,7 +284,7 @@ image-slot{border-radius:var(--r);overflow:hidden;display:block}
 .jf-brand-signature{
   position:relative;
   overflow:hidden;
-  background:linear-gradient(135deg,var(--jf-charcoal) 0%,var(--jf-green) 58%,var(--jf-teal) 100%);
+  background:linear-gradient(135deg,#14355F 0%,#0E1B33 100%);
   color:var(--jf-white);
   padding:clamp(72px,7vw,112px) 0;
 }
@@ -732,7 +732,7 @@ image-slot:not([src]){display:none}
   --jf-gold:#2E96CE;
   --jf-gold-d:#15628F;
   --jf-gold-l:#7CC3E8;
-  --jf-teal:#145E5A;
+  --jf-teal:#14507A;
   --jf-concrete:#E6E8EB;
   --jf-white:#FAFBFC;
 
