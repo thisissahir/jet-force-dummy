@@ -4,8 +4,8 @@
    ============================================================ */
 
 const JF = {
-  phone:     '(555) 555-5555',
-  phoneHref: 'tel:5555555555',
+  phone:     '720-648-6330',
+  phoneHref: 'tel:7206486330',
   location:  'Denver, CO Metro Area',
   year:      new Date().getFullYear(),
 };
