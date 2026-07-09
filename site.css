@@ -417,7 +417,7 @@ image-slot:not([src]){display:none}
 /* Home hero banner photo: JF truck + Denver skyline. Dark left for copy
    legibility, lighter right so the truck branding reads. */
 .hero--photo{
-  background:linear-gradient(90deg, rgba(16,29,49,.93) 0%, rgba(16,29,49,.85) 30%, rgba(16,29,49,.60) 55%, rgba(16,29,49,.30) 80%, rgba(16,29,49,.18) 100%), url('assets/photos/home-banner.jpg?v=55');
+  background:linear-gradient(90deg, rgba(16,29,49,.93) 0%, rgba(16,29,49,.85) 30%, rgba(16,29,49,.60) 55%, rgba(16,29,49,.30) 80%, rgba(16,29,49,.18) 100%), url('assets/photos/home-banner.jpg?v=56');
   background-size:cover;
   background-position:50% 40%;
   background-repeat:no-repeat;
@@ -425,7 +425,7 @@ image-slot:not([src]){display:none}
 .hero--photo .hero-content{max-width:660px}
 @media (max-width:760px){
   .hero--photo{
-    background:linear-gradient(rgba(16,29,49,.82), rgba(16,29,49,.90)), url('assets/photos/home-banner.jpg?v=55');
+    background:linear-gradient(rgba(16,29,49,.82), rgba(16,29,49,.90)), url('assets/photos/home-banner.jpg?v=56');
     background-size:cover;
     background-position:55% center;
   }
@@ -818,7 +818,7 @@ h4{font-size:1.15rem}
 .hero--photo{
   background:
     linear-gradient(90deg,rgba(12,16,20,.96) 0%,rgba(12,16,20,.90) 34%,rgba(26,77,53,.62) 61%,rgba(20,94,90,.38) 100%),
-    url('assets/photos/home-banner.jpg?v=55') center/cover no-repeat;
+    url('assets/photos/home-banner.jpg?v=56') center/cover no-repeat;
 }
 .hero::before{
   background:
@@ -1030,7 +1030,7 @@ h4{font-size:1.15rem}
   .hero--photo{
     background:
       linear-gradient(rgba(12,16,20,.9),rgba(12,16,20,.94)),
-      url('assets/photos/home-banner.jpg?v=55') center/cover no-repeat;
+      url('assets/photos/home-banner.jpg?v=56') center/cover no-repeat;
   }
   .hero-content{padding:72px 0 64px}
   .hero h1{font-size:clamp(3.4rem,18vw,5.2rem)}
@@ -1281,7 +1281,7 @@ h4{font-size:1.15rem}
 #site-footer .foot-info,#site-footer .foot-info a{color:var(--br-900)}
 .foot-logo-lockup .nav-logo-name{color:var(--br-900)}
 .foot-logo-lockup .nav-logo-sub{color:rgba(19,37,58,.55)}
-.hero--photo{background:linear-gradient(90deg, rgba(255,255,255,.97) 0%, rgba(255,255,255,.95) 40%, rgba(255,255,255,.78) 58%, rgba(255,255,255,.30) 80%, rgba(255,255,255,.08) 100%), url('assets/photos/home-banner.jpg?v=55');background-size:cover;background-position:88% 26%}
+.hero--photo{background:linear-gradient(90deg, rgba(255,255,255,.97) 0%, rgba(255,255,255,.95) 40%, rgba(255,255,255,.78) 58%, rgba(255,255,255,.30) 80%, rgba(255,255,255,.08) 100%), url('assets/photos/home-banner.jpg?v=56');background-size:cover;background-position:88% 26%}
 .hero h1{color:var(--br-900)}
 .hero-sub{color:rgba(19,37,58,.72)}
 .hero-trustline{color:rgba(19,37,58,.6)}
@@ -1295,7 +1295,7 @@ h4{font-size:1.15rem}
 .breadcrumb a{color:rgba(19,37,58,.62)}
 .breadcrumb a:hover{color:var(--gr-700)}
 @media (max-width:760px){
-  .hero--photo{background:linear-gradient(rgba(255,255,255,.92), rgba(255,255,255,.82)), url('assets/photos/home-banner.jpg?v=55');background-size:cover;background-position:55% center}
+  .hero--photo{background:linear-gradient(rgba(255,255,255,.92), rgba(255,255,255,.82)), url('assets/photos/home-banner.jpg?v=56');background-size:cover;background-position:55% center}
 }
 
 /* Light hero: pop the headline accents in green */
