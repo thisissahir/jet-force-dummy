@@ -1302,3 +1302,9 @@ h4{font-size:1.15rem}
 .hero .eyebrow{color:var(--gr-700)}
 .hero h1 em{color:var(--gr-700)}
 .hero h1{text-shadow:none}
+
+/* Crew / truck showcase: full uncropped photo under the hero */
+.jf-crew{padding:56px 0 8px;background:var(--white)}
+.jf-crew-frame{margin:0;max-width:1040px;margin:0 auto}
+.jf-crew-frame img{display:block;width:100%;height:auto;border-radius:12px;border:1px solid var(--nt-200);box-shadow:0 24px 60px rgba(14,27,51,.16)}
+@media(max-width:768px){.jf-crew{padding:36px 0 4px}}
